@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-screen w-screen bg-[#fff] py-8 text-[#958277] font-[300] font-source flex relative z-20 transition-transform ease-in-out delay-500"
+    class="h-screen w-screen bg-[#fff] py-8 text-[#958277] font-[300] font-akaya flex relative z-20 transition-transform ease-in-out delay-500"
     :class="[show ? '-translate-y-full' : '']"
   >
     <div class="min-h-1/2 w-4/5 m-auto">
@@ -49,6 +49,7 @@
 
   <section
     class="w-screen h-screen bg-[#fff] absolute z-0 top-0 text-[#958277]"
+    :class="[!show ? 'overflow-y-hidden' : 'overflow-y-auto']"
     v-if="show"
   >
     <div class="min-h-screen w-screen flex bg-[#fff]">
