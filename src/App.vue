@@ -14,7 +14,7 @@
         Wedding of
       </h2>
       <h1
-        class="text-center text-[calc(60px*0.75)] leading-[1] tracking-[2px] pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_1.1s_both] font-[500]"
+        class="text-center text-[calc(60px*0.75)] leading-[1] tracking-[2px] pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_1.1s_both]"
       >
         Tiara & Atar
       </h1>
@@ -30,7 +30,7 @@
         Dear
       </h2>
       <h1
-        class="text-center text-[calc(36px*0.75)] leading-[1] tracking-[2px] pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_2.1s_both] font-[500]"
+        class="text-center text-[calc(36px*0.75)] leading-[1] tracking-[2px] pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_2.1s_both]"
       >
         Ulvi Zasvia
       </h1>
