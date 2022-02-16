@@ -4,17 +4,15 @@
     :class="[show ? '-translate-y-full' : '']"
   >
     <div class="min-h-1/2 w-4/5 m-auto">
-      <h1 class="font-festive text-5xl text-center tracking-[10px] -mb-2">
-        T&A
-      </h1>
+      <h1 class="font-honey text-3xl text-center tracking-[10px] mb-2">T&A</h1>
       <img src="../public/decoration-2.png" class="w-full" />
       <h2
-        class="uppercase text-center tracking-[1px] mt-8 text-[calc(20px*0.75)] animate-[fade-in-top_1s_ease-in-out_0.8s_both]"
+        class="uppercase text-center tracking-[1px] mt-6 text-[calc(20px*0.75)] animate-[fade-in-top_1s_ease-in-out_0.8s_both]"
       >
         Wedding of
       </h2>
       <h1
-        class="text-center text-[calc(60px*0.75)] leading-[1] tracking-[2px] pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_1.1s_both]"
+        class="text-center text-[calc(70px*0.75)] leading-[1] tracking-[2px] mt-4 pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_1.1s_both] font-honey"
       >
         Tiara & Atar
       </h1>
@@ -30,7 +28,7 @@
         Dear
       </h2>
       <h1
-        class="text-center text-[calc(36px*0.75)] leading-[1] tracking-[2px] pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_2.1s_both]"
+        class="text-center font-honey text-[calc(36px*0.75)] leading-[1] tracking-[2px] pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_2.1s_both]"
       >
         Ulvi Zasvia
       </h1>
@@ -40,7 +38,7 @@
       <div class="animate-[fade-in-top_1s_ease-in-out_2.5s_both]">
         <button
           @click="show = !show"
-          class="animate-bounce px-2 py-2 bg-[#958277] text-white rounded-lg mt-8 hover:opacity-80 text-base block mx-auto"
+          class="animate-bounce px-2 py-2 bg-[#958277] text-white rounded-lg mt-8 hover:opacity-80 focus:outline-none active:outline-none text-base block mx-auto"
         >
           Open Invitation
         </button>
@@ -50,21 +48,53 @@
   </div>
 
   <section
-    class="w-screen h-screen bg-[#fff] absolute z-0 top-0 flex text-[#958277]"
+    class="w-screen h-screen bg-[#fff] absolute z-0 top-0 text-[#958277]"
     v-if="show"
   >
-    <Modal :withButton="false" />
+    <div class="min-h-screen w-screen flex bg-[#fff]">
+      <Modal :withButton="false" />
 
-    <div class="min-h-1/2 w-4/5 m-auto">
-      <img src="../public/decoration-2.png" class="w-full rotate-180" />
-      <h2 class="uppercase text-center text-2xl tracking-[1px] mt-8">
-        وَمِنْ كُلِّ شَيْءٍ خَلَقْنَا زَوْجَيْنِ لَعَلَّكُمْ تَذَكَّرُونَ
-      </h2>
-      <p class="text-sm text-center mt-6">
-        Artinya: “Dan segala sesuatu Kami Ciptakan Berpasang – pasangan supaya
-        kamu mengingat kebesaran Allah.”(Adz-Dzariyat ayat 49)
-      </p>
-      <img src="../public/decoration-2.png" class="w-full mt-8" />
+      <div class="min-h-1/2 w-4/5 m-auto">
+        <img src="../public/decoration-2.png" class="w-full rotate-180" />
+        <h2 class="uppercase text-center text-2xl tracking-[1px] mt-8">
+          وَمِنْ كُلِّ شَيْءٍ خَلَقْنَا زَوْجَيْنِ لَعَلَّكُمْ تَذَكَّرُونَ
+        </h2>
+        <p class="text-sm text-center mt-6">
+          Artinya: “Dan segala sesuatu Kami Ciptakan Berpasang – pasangan supaya
+          kamu mengingat kebesaran Allah.”(Adz-Dzariyat ayat 49)
+        </p>
+        <img src="../public/decoration-2.png" class="w-full mt-8" />
+      </div>
+    </div>
+
+    <div class="min-h-screen w-screen flex bg-[#fff]">
+      <div class="min-h-1/2 w-4/5 m-auto">
+        <img src="../public/decoration-2.png" class="w-full mb-4" />
+        <h1 class="text-center text-3xl mb-4 font-honey">
+          Akad Nikah & Resepsi
+        </h1>
+        <img src="./assets/images/gedung.png" class="w-3/5 mx-auto" alt="" />
+        <h2 class="text-center text-lg mt-4">
+          Gedung UIN Sulthan Thaha Saifuddin
+        </h2>
+        <h3 class="text-center text-base mt-2">
+          Minggu, 6 <sup>th</sup> Maret 2022
+        </h3>
+        <p class="text-center text-xs mt-2">
+          Jl. Arif Rahman Hakim No.111, Simpang IV Sipin, Kec. Telanaipura, Kota
+          Jambi, Jambi 36361
+        </p>
+        <div class="w-full flex">
+          <a
+            target="_blank"
+            href="https://goo.gl/maps/2nPxsXJMoCHRqswDA"
+            class="animate-bounce px-2 py-2 max-w-xl bg-[#958277] text-white rounded-lg mt-8 hover:opacity-80 focus:outline-none active:outline-none text-base text-center inline-block mx-auto"
+          >
+            Lihat Lokasi
+          </a>
+        </div>
+        <img src="../public/decoration-2.png" class="w-full mt-4 rotate-180" />
+      </div>
     </div>
   </section>
 </template>

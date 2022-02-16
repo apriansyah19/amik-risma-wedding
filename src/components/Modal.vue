@@ -10,14 +10,14 @@
 
     <div
       v-if="toggleModal"
-      class="fixed overflow-x-hidden overflow-y-auto inset-0 flex justify-center items-center z-50"
+      class="fixed overflow-x-hidden overflow-y-hidden inset-0 flex justify-center items-center z-50"
     >
       <div class="relative mx-2 w-auto max-w-2xl">
         <div class="bg-white w-full rounded-lg shadow-2xl flex flex-col p-4">
-          <div class="text-2xl font-bold mb-6 text-center">
+          <div class="text-4xl mb-6 text-center font-honey">
             Protokol Kesehatan Covid-19
           </div>
-          <span class="leading-5 text-center mb-6">
+          <span class="leading-5 text-center text-sm mb-6">
             Demi mendukung kesehatan bersama alangkah baiknya para tamu yang
             akan hadir memenuhi protokol kesehatan sebagai berikut:
           </span>
