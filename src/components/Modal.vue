@@ -26,7 +26,10 @@
           <img src="../assets/images/prokes-covid.jpg" alt="" />
           <button
             class="rounded bg-[#958277] text-sm text-white px-3 py-2 m-auto mt-6"
-            @click="toggleModal = false"
+            @click="
+              toggleModal = false;
+              $emit('toggle-modal');
+            "
           >
             Baik, Saya Mengerti
           </button>
