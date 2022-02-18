@@ -73,10 +73,10 @@
     </div>
 
     <div
-      class="min-h-screen w-screen flex bg-[#fff] font-akaya pb-10"
+      class="min-h-screen w-screen flex bg-[#fff] font-akaya"
       id="kata-pengantar"
     >
-      <div class="min-h-1/2 w-4/5 m-auto">
+      <div class="min-h-1/2 w-4/5 m-auto pb-20">
         <img src="../../public/decoration-2.png" class="w-full mb-4" />
         <img
           data-aos="zoom-in-up"
