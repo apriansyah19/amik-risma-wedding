@@ -3,7 +3,7 @@
     class="h-screen w-screen bg-[#fff] py-8 text-[#958277] font-[300] font-akaya flex relative z-20 transition-transform ease-in-out delay-500"
     :class="[show ? '-translate-y-full' : '']"
   >
-    <div class="min-h-1/2 w-4/5 m-auto">
+    <div class="min-h-1/2 w-4/5 m-auto pb-28">
       <h1 class="font-honey text-3xl text-center tracking-[10px] mb-2">T&A</h1>
       <img src="../../public/decoration-2.png" class="w-full" />
       <h2
@@ -59,7 +59,7 @@
     <div class="min-h-screen w-screen flex bg-[#fff]">
       <Modal :withButton="false" @toggle-modal="modal = false" />
 
-      <div class="min-h-1/2 w-4/5 m-auto">
+      <div class="min-h-1/2 w-4/5 m-auto pb-28">
         <img src="../../public/decoration-2.png" class="w-full rotate-180" />
         <h2 class="uppercase text-center text-2xl tracking-[1px] mt-8">
           وَمِنْ كُلِّ شَيْءٍ خَلَقْنَا زَوْجَيْنِ لَعَلَّكُمْ تَذَكَّرُونَ
@@ -76,7 +76,7 @@
       class="min-h-screen w-screen flex bg-[#fff] font-akaya"
       id="kata-pengantar"
     >
-      <div class="min-h-1/2 w-4/5 m-auto pb-20">
+      <div class="min-h-1/2 w-4/5 m-auto pb-28">
         <img src="../../public/decoration-2.png" class="w-full mb-4" />
         <img
           data-aos="zoom-in-up"
@@ -204,7 +204,7 @@
     </div>
 
     <div class="min-h-screen w-screen flex bg-[#fff] font-akaya pb-4" id="dday">
-      <div class="min-h-1/2 w-4/5 m-auto">
+      <div class="min-h-1/2 w-4/5 m-auto pb-28">
         <img src="../../public/decoration-2.png" class="w-full mb-4" />
         <h1
           class="text-3xl text-center mb-8"
@@ -289,7 +289,7 @@
     </div>
 
     <div class="min-h-screen w-screen flex bg-[#fff] font-akaya" id="lokasi">
-      <div class="min-h-1/2 w-4/5 m-auto">
+      <div class="min-h-1/2 w-4/5 m-auto pb-28">
         <img src="../../public/decoration-2.png" class="w-full mb-4" />
         <h1
           class="text-center text-3xl mb-4 font-honey"
