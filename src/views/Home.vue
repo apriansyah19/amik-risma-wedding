@@ -28,7 +28,7 @@
         Dear
       </h2>
       <h1
-        class="text-center font-honey text-[calc(36px*0.75)] leading-[1] tracking-[2px] pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_2.1s_both]"
+        class="text-center font-akaya text-[calc(36px*0.75)] leading-[1] tracking-[2px] pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_2.1s_both]"
       >
         Ulvi Zasvia
       </h1>
@@ -55,6 +55,7 @@
     v-if="show"
     :class="[modal ? 'overflow-y-hidden' : 'overflow-y-visible']"
   >
+    <Menu />
     <div class="min-h-screen w-screen flex bg-[#fff]">
       <Modal :withButton="false" @toggle-modal="modal = false" />
 
@@ -71,7 +72,10 @@
       </div>
     </div>
 
-    <div class="min-h-screen w-screen flex bg-[#fff]">
+    <div
+      class="min-h-screen w-screen flex bg-[#fff] font-akaya pb-6"
+      id="kata-pengantar"
+    >
       <div class="min-h-1/2 w-4/5 m-auto">
         <img src="../../public/decoration-2.png" class="w-full mb-4" />
         <img
@@ -91,7 +95,7 @@
           Assalamualaikum Wr. Wb.
         </h1>
         <p
-          class="text-sm text-center mb-4"
+          class="text-base text-center mb-4 leading-5"
           data-aos="zoom-in-up"
           data-aos-duration="1500"
           data-aos-once="true"
@@ -100,7 +104,7 @@
           serta Kerabat sekalian untuk menghadiri acara pernikahan kami.
         </p>
         <p
-          class="text-sm text-center my-4"
+          class="text-base text-center my-4 leading-5"
           data-aos="zoom-in-down"
           data-aos-duration="1500"
           data-aos-once="true"
@@ -117,8 +121,11 @@
       </div>
     </div>
 
-    <div class="min-h-screen w-screen flex bg-[#fff]">
-      <div class="min-h-1/2 w-4/5 m-auto">
+    <div
+      class="min-h-screen w-screen flex bg-[#fff] font-akaya"
+      id="mempelai-wanita"
+    >
+      <div class="min-h-1/2 w-full m-auto">
         <img src="../../public/decoration-2.png" class="w-full mb-4" />
         <h1
           class="text-center text-3xl mb-8 font-honey"
@@ -135,16 +142,17 @@
           data-aos-duration="1500"
           data-aos-once="true"
         >
-          Tiara Aritsya, <span class="text-2xl">S.Farm., Apt.</span>
+          <span class="text-2xl">Apt.</span> Tiara Aritsya,
+          <span class="text-2xl">S.Farm.</span>
         </h2>
         <p
-          class="text-center"
+          class="text-center w-[90%] mx-auto"
           data-aos="zoom-in-down"
           data-aos-duration="1500"
           data-aos-once="true"
         >
-          <b>Anak Pertama</b> dari Bapak <b>Syaiful Anwar</b> <br />& Ibu
-          <b>Ermayani Arifin</b>
+          <b>Putri</b> dari Bapak <b>Syaiful Anwar, S.H.</b> <br />& Ibu
+          <b>Dra. Ermayani Arifin</b>
         </p>
 
         <img
@@ -154,8 +162,11 @@
       </div>
     </div>
 
-    <div class="min-h-screen w-screen flex bg-[#fff]">
-      <div class="min-h-1/2 w-4/5 m-auto">
+    <div
+      class="min-h-screen w-screen flex bg-[#fff] font-akaya"
+      id="mempelai-pria"
+    >
+      <div class="min-h-1/2 w-full m-auto">
         <img src="../../public/decoration-2.png" class="w-full mb-4" />
         <h1
           class="text-center text-3xl mb-8 font-honey"
@@ -172,16 +183,17 @@
           data-aos-duration="1500"
           data-aos-once="true"
         >
-          Atar, <span class="text-2xl">S.e., M.e.</span>
+          Atar Satria Fikri, <span class="text-2xl">S.e., M.Ak.</span>
         </h2>
         <p
-          class="text-center"
+          class="text-center w-[90%] mx-auto"
           data-aos="zoom-in-down"
           data-aos-duration="1500"
           data-aos-once="true"
         >
-          <b>Anak Pertama</b> dari Bapak <b>Orang Tua (Pria)</b> <br />& Ibu
-          <b>Orang Tua (Wanita)</b>
+          <b>Putra</b> dari Bapak <b>Dr. H. M. Saman Sulaiman, M.A.</b> <br />
+          & Ibu
+          <b>Hj. Darniati</b>
         </p>
 
         <img
@@ -191,12 +203,24 @@
       </div>
     </div>
 
-    <div class="min-h-screen w-screen flex bg-[#fff]">
+    <div class="min-h-screen w-screen flex bg-[#fff] font-akaya pb-4" id="dday">
       <div class="min-h-1/2 w-4/5 m-auto">
         <img src="../../public/decoration-2.png" class="w-full mb-4" />
-        <h1 class="text-3xl text-center mb-8">إِن شَآءَ ٱللَّهُ</h1>
+        <h1
+          class="text-3xl text-center mb-8"
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
+          data-aos-once="true"
+        >
+          إِن شَآءَ ٱللَّهُ
+        </h1>
 
-        <div class="flex justify-evenly items-center mb-8">
+        <div
+          class="flex justify-evenly items-center mb-8"
+          data-aos="zoom-in-down"
+          data-aos-duration="1500"
+          data-aos-once="true"
+        >
           <div>
             <h1 class="text-4xl font-honey">Tiara</h1>
           </div>
@@ -205,35 +229,58 @@
             <h1 class="text-4xl font-honey">Atar</h1>
           </div>
         </div>
-        <p class="text-center mb-8">
+        <p
+          class="text-center mb-4"
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
+          data-aos-once="true"
+        >
           akan melaksanakan <b>Akad Nikah</b> dan <b>Resepsi</b> pada tanggal:
         </p>
-        <h1 class="text-2xl text-center font-honey mb-4">
+        <h1
+          class="text-xl text-center font-akaya mb-4"
+          data-aos="zoom-in-down"
+          data-aos-duration="1500"
+          data-aos-once="true"
+        >
           Minggu, 6 Maret 2022
         </h1>
-        <Countdown
-          :time="dday"
-          v-slot="{ days, hours, minutes, seconds }"
-          v-if="dday > 0"
+        <div
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
+          data-aos-once="true"
         >
-          <div
-            class="flex justify-center items-stretch text-white gap-4 text-akaya"
+          <Countdown
+            :time="dday"
+            v-slot="{ days, hours, minutes, seconds }"
+            v-if="dday > 0"
           >
-            <div class="rounded-lg bg-[#958277] w-[60px] px-2 py-4 text-center">
-              {{ days }} <br />Hari
+            <div
+              class="flex justify-center items-stretch text-white gap-4 text-akaya"
+            >
+              <div
+                class="font-akaya rounded-lg bg-[#958277] w-[60px] p-1 text-center"
+              >
+                {{ days }} <br />Hari
+              </div>
+              <div
+                class="font-akaya rounded-lg bg-[#958277] w-[60px] p-1 text-center"
+              >
+                {{ hours }} <br />Jam
+              </div>
+              <div
+                class="font-akaya rounded-lg bg-[#958277] w-[60px] p-1 text-center"
+              >
+                {{ minutes }} <br />Menit
+              </div>
+              <div
+                class="font-akaya rounded-lg bg-[#958277] w-[60px] p-1 text-center"
+              >
+                {{ seconds }} <br />Detik
+              </div>
             </div>
-            <div class="rounded-lg bg-[#958277] w-[60px] px-2 py-4 text-center">
-              {{ hours }} <br />Jam
-            </div>
-            <div class="rounded-lg bg-[#958277] w-[60px] px-2 py-4 text-center">
-              {{ minutes }} <br />Menit
-            </div>
-            <div class="rounded-lg bg-[#958277] w-[60px] px-2 py-4 text-center">
-              {{ seconds }} <br />Detik
-            </div>
-          </div>
-        </Countdown>
-
+          </Countdown>
+        </div>
         <img
           src="../../public/decoration-2.png"
           class="w-full mt-6 rotate-180"
@@ -241,7 +288,7 @@
       </div>
     </div>
 
-    <div class="min-h-screen w-screen flex bg-[#fff]">
+    <div class="min-h-screen w-screen flex bg-[#fff] font-akaya" id="lokasi">
       <div class="min-h-1/2 w-4/5 m-auto">
         <img src="../../public/decoration-2.png" class="w-full mb-4" />
         <h1
@@ -310,6 +357,7 @@
 
 <script>
 import Modal from "../components/Modal.vue";
+import Menu from "../components/Menu.vue";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Countdown from "@chenfengyuan/vue-countdown";
@@ -319,6 +367,7 @@ export default {
   components: {
     Modal,
     Countdown,
+    Menu,
   },
   data() {
     return {
