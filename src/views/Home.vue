@@ -73,7 +73,7 @@
     </div>
 
     <div
-      class="min-h-screen w-screen flex bg-[#fff] font-akaya pb-6"
+      class="min-h-screen w-screen flex bg-[#fff] font-akaya pb-10"
       id="kata-pengantar"
     >
       <div class="min-h-1/2 w-4/5 m-auto">
