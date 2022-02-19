@@ -3,7 +3,7 @@
     class="h-screen w-screen bg-[#fff] py-8 text-[#958277] font-[300] font-akaya flex relative z-20 transition-transform ease-in-out delay-500"
     :class="[show ? '-translate-y-full' : '']"
   >
-    <div class="min-h-1/2 w-4/5 m-auto pb-28">
+    <div class="min-h-1/2 w-4/5 m-auto">
       <h1 class="font-honey text-3xl text-center tracking-[10px] mb-2">T&A</h1>
       <img src="../../public/decoration-2.png" class="w-full" />
       <h2
@@ -37,10 +37,7 @@
       </p>
       <div class="animate-[fade-in-top_1s_ease-in-out_2.5s_both]">
         <button
-          @click="
-            show = !show;
-            modal = !modal;
-          "
+          @click="show = !show"
           class="animate-bounce px-2 py-2 bg-[#958277] text-white rounded-lg mt-8 hover:opacity-80 focus:outline-none active:outline-none text-base block mx-auto"
         >
           Open Invitation
@@ -59,7 +56,7 @@
     <div class="min-h-screen w-screen flex bg-[#fff]">
       <Modal :withButton="false" @toggle-modal="modal = false" />
 
-      <div class="min-h-1/2 w-4/5 m-auto pb-28">
+      <div class="min-h-1/2 w-4/5 m-auto">
         <img src="../../public/decoration-2.png" class="w-full rotate-180" />
         <h2 class="uppercase text-center text-2xl tracking-[1px] mt-8">
           وَمِنْ كُلِّ شَيْءٍ خَلَقْنَا زَوْجَيْنِ لَعَلَّكُمْ تَذَكَّرُونَ
@@ -76,7 +73,7 @@
       class="min-h-screen w-screen flex bg-[#fff] font-akaya"
       id="kata-pengantar"
     >
-      <div class="min-h-1/2 w-4/5 m-auto pb-28">
+      <div class="min-h-1/2 w-4/5 m-auto">
         <img src="../../public/decoration-2.png" class="w-full mb-4" />
         <img
           data-aos="zoom-in-up"
@@ -204,7 +201,7 @@
     </div>
 
     <div class="min-h-screen w-screen flex bg-[#fff] font-akaya pb-4" id="dday">
-      <div class="min-h-1/2 w-4/5 m-auto pb-28">
+      <div class="min-h-1/2 w-4/5 m-auto">
         <img src="../../public/decoration-2.png" class="w-full mb-4" />
         <h1
           class="text-3xl text-center mb-8"
@@ -289,7 +286,7 @@
     </div>
 
     <div class="min-h-screen w-screen flex bg-[#fff] font-akaya" id="lokasi">
-      <div class="min-h-1/2 w-4/5 m-auto pb-28">
+      <div class="min-h-1/2 w-4/5 m-auto">
         <img src="../../public/decoration-2.png" class="w-full mb-4" />
         <h1
           class="text-center text-3xl mb-4 font-honey"
@@ -372,7 +369,14 @@ export default {
   data() {
     return {
       show: false,
-      modal: false,
+      modal: true,
+      list: [
+        "btn-kata-pengantar",
+        "btn-mempelai-wanita",
+        "btn-mempelai-pria",
+        "btn-dday",
+        "btn-lokasi",
+      ],
     };
   },
   computed: {
@@ -384,6 +388,23 @@ export default {
   },
   created() {
     AOS.init();
+  },
+  watch: {
+    modal() {
+      if (this.modal === false) {
+        var i = 0;
+        setInterval(() => {
+          if (i > 4) {
+            i = 0;
+            document.getElementById(this.list[i]).click();
+            i++;
+          } else {
+            document.getElementById(this.list[i]).click();
+            i++;
+          }
+        }, 5000);
+      }
+    },
   },
 };
 </script>
