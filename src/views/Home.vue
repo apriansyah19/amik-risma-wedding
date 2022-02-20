@@ -168,10 +168,10 @@
           <b>Dra. Ermayani Arifin</b>
         </p>
 
-        <img
+        <!-- <img
           src="../../public/decoration-2.png"
           class="w-full mt-4 rotate-180"
-        />
+        /> -->
       </div>
     </div>
 
@@ -225,10 +225,10 @@
           <b>Hj. Darniati</b>
         </p>
 
-        <img
+        <!-- <img
           src="../../public/decoration-2.png"
           class="w-full mt-4 rotate-180"
-        />
+        /> -->
       </div>
     </div>
 
