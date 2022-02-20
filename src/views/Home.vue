@@ -73,7 +73,7 @@
       class="min-h-screen w-screen flex bg-[#fff] font-akaya"
       id="kata-pengantar"
     >
-      <div class="min-h-1/2 w-4/5 m-auto">
+      <div class="min-h-1/2 w-4/5 m-auto pb-36">
         <img src="../../public/decoration-2.png" class="w-full mb-4" />
         <img
           data-aos="zoom-in-up"
@@ -122,7 +122,7 @@
       class="min-h-screen w-screen flex bg-[#fff] font-akaya"
       id="mempelai-wanita"
     >
-      <div class="min-h-1/2 w-full m-auto pb-32">
+      <div class="min-h-1/2 w-full m-auto pb-36">
         <img src="../../public/decoration-2.png" class="w-full mb-4" />
         <h1
           class="text-center text-3xl mb-4 font-honey"
@@ -179,7 +179,7 @@
       class="min-h-screen w-screen flex bg-[#fff] font-akaya"
       id="mempelai-pria"
     >
-      <div class="min-h-1/2 w-full m-auto pb-32">
+      <div class="min-h-1/2 w-full m-auto pb-36">
         <img src="../../public/decoration-2.png" class="w-full mb-4" />
         <h1
           class="text-center text-3xl mb-8 font-honey"
@@ -232,8 +232,8 @@
       </div>
     </div>
 
-    <div class="min-h-screen w-screen flex bg-[#fff] font-akaya pb-4" id="dday">
-      <div class="min-h-1/2 w-4/5 m-auto">
+    <div class="min-h-screen w-screen flex bg-[#fff] font-akaya" id="dday">
+      <div class="min-h-1/2 w-4/5 m-auto pb-36">
         <img src="../../public/decoration-2.png" class="w-full mb-4" />
         <h1
           class="text-3xl text-center mb-8"
@@ -318,7 +318,7 @@
     </div>
 
     <div class="min-h-screen w-screen flex bg-[#fff] font-akaya" id="lokasi">
-      <div class="min-h-1/2 w-4/5 m-auto">
+      <div class="min-h-1/2 w-4/5 m-auto pb-36">
         <img src="../../public/decoration-2.png" class="w-full mb-4" />
         <h1
           class="text-center text-3xl mb-4 font-honey"
