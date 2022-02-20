@@ -122,7 +122,7 @@
       class="min-h-screen w-screen flex bg-[#fff] font-akaya"
       id="mempelai-wanita"
     >
-      <div class="min-h-1/2 w-full m-auto pb-16">
+      <div class="min-h-1/2 w-full m-auto pb-28">
         <img src="../../public/decoration-2.png" class="w-full mb-4" />
         <h1
           class="text-center text-3xl mb-4 font-honey"
