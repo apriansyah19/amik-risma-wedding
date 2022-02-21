@@ -133,45 +133,67 @@
           Mempelai Wanita
         </h1>
 
-        <div class="w-full relative">
-          <img src="../assets/images/ta-1.jpg" class="mb-2" alt="" />
+        <div class="columns-2 flex">
+          <div class="w-2/3 h-full relative">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1440 320"
+              class="absolute top-0 rotate-180 z-20"
+            >
+              <path
+                fill="#fff"
+                fill-opacity="1"
+                d="M0,160L40,165.3C80,171,160,181,240,208C320,235,400,277,480,277.3C560,277,640,235,720,224C800,213,880,235,960,245.3C1040,256,1120,256,1200,245.3C1280,235,1360,213,1400,202.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+              ></path>
+            </svg>
+            <img
+              src="../assets/images/tiara.png"
+              class="w-full h-full"
+              data-aos="zoom-in-up"
+              data-aos-duration="1500"
+              data-aos-once="true"
+              alt=""
+            />
 
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1440 320"
-            class="absolute bottom-0"
-          >
-            <path
-              fill="#fff"
-              fill-opacity="1"
-              d="M0,160L40,165.3C80,171,160,181,240,208C320,235,400,277,480,277.3C560,277,640,235,720,224C800,213,880,235,960,245.3C1040,256,1120,256,1200,245.3C1280,235,1360,213,1400,202.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-            ></path>
-          </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1440 320"
+              class="absolute bottom-0"
+            >
+              <path
+                fill="#fff"
+                fill-opacity="1"
+                d="M0,160L40,165.3C80,171,160,181,240,208C320,235,400,277,480,277.3C560,277,640,235,720,224C800,213,880,235,960,245.3C1040,256,1120,256,1200,245.3C1280,235,1360,213,1400,202.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+              ></path>
+            </svg>
+          </div>
+
+          <div class="m-auto">
+            <h2
+              class="text-center text-4xl px-1 font-honey"
+              data-aos="zoom-in-up"
+              data-aos-duration="1500"
+              data-aos-once="true"
+            >
+              <span class="text-2xl">Apt.</span> Tiara Aritsya,
+              <span class="text-2xl">S.Farm.</span>
+            </h2>
+            <p
+              class="text-center w-[90%] mx-auto mt-6 leading-4 px-2"
+              data-aos="zoom-in-down"
+              data-aos-duration="1500"
+              data-aos-once="true"
+            >
+              <b>Putri</b> dari Bapak <b>Syaiful Anwar, S.H.</b> & Ibu
+              <b>Dra. Ermayani Arifin</b>
+            </p>
+          </div>
         </div>
 
-        <h2
-          class="text-center text-4xl mb-8 font-honey"
-          data-aos="zoom-in-up"
-          data-aos-duration="1500"
-          data-aos-once="true"
-        >
-          <span class="text-2xl">Apt.</span> Tiara Aritsya,
-          <span class="text-2xl">S.Farm.</span>
-        </h2>
-        <p
-          class="text-center w-[90%] mx-auto"
-          data-aos="zoom-in-down"
-          data-aos-duration="1500"
-          data-aos-once="true"
-        >
-          <b>Putri</b> dari Bapak <b>Syaiful Anwar, S.H.</b> <br />& Ibu
-          <b>Dra. Ermayani Arifin</b>
-        </p>
-
-        <!-- <img
+        <img
           src="../../public/decoration-2.png"
           class="w-full mt-4 rotate-180"
-        /> -->
+        />
       </div>
     </div>
 
@@ -182,7 +204,7 @@
       <div class="min-h-1/2 w-full m-auto pb-36">
         <img src="../../public/decoration-2.png" class="w-full mb-4" />
         <h1
-          class="text-center text-3xl mb-8 font-honey"
+          class="text-center text-3xl mb-4 font-honey"
           data-aos="zoom-in-down"
           data-aos-duration="1500"
           data-aos-once="true"
@@ -190,45 +212,69 @@
           Mempelai Pria
         </h1>
 
-        <div class="w-full relative">
-          <img src="../assets/images/ta-2.jpg" class="mb-2" alt="" />
+        <div class="columns-2 flex">
+          <div class="m-auto">
+            <h2
+              class="text-center text-4xl px-1 font-honey"
+              data-aos="zoom-in-up"
+              data-aos-duration="1500"
+              data-aos-once="true"
+            >
+              Atar Satria Fikri, <span class="text-2xl">S.e., M.Ak.</span>
+            </h2>
 
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1440 320"
-            class="absolute bottom-0"
-          >
-            <path
-              fill="#fff"
-              fill-opacity="1"
-              d="M0,160L40,165.3C80,171,160,181,240,208C320,235,400,277,480,277.3C560,277,640,235,720,224C800,213,880,235,960,245.3C1040,256,1120,256,1200,245.3C1280,235,1360,213,1400,202.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-            ></path>
-          </svg>
+            <p
+              class="text-center w-[90%] mx-auto leading-4 mt-6 px-2"
+              data-aos="zoom-in-down"
+              data-aos-duration="1500"
+              data-aos-once="true"
+            >
+              <b>Putra</b> dari Bapak <b>Dr. H. M. Saman Sulaiman, M.A.</b>
+              <br />
+              & Ibu
+              <b>Hj. Darniati</b>
+            </p>
+          </div>
+
+          <div class="w-2/3 h-full relative">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1440 320"
+              class="absolute top-0 rotate-180 z-20"
+            >
+              <path
+                fill="#fff"
+                fill-opacity="1"
+                d="M0,160L40,165.3C80,171,160,181,240,208C320,235,400,277,480,277.3C560,277,640,235,720,224C800,213,880,235,960,245.3C1040,256,1120,256,1200,245.3C1280,235,1360,213,1400,202.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+              ></path>
+            </svg>
+            <img
+              src="../assets/images/atar.png"
+              class="w-full h-full"
+              data-aos="zoom-in-up"
+              data-aos-duration="1500"
+              data-aos-once="true"
+              alt=""
+            />
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1440 320"
+              class="absolute bottom-0"
+            >
+              <path
+                fill="#fff"
+                fill-opacity="1"
+                d="M0,160L40,165.3C80,171,160,181,240,208C320,235,400,277,480,277.3C560,277,640,235,720,224C800,213,880,235,960,245.3C1040,256,1120,256,1200,245.3C1280,235,1360,213,1400,202.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+              ></path>
+            </svg>
+          </div>
         </div>
 
-        <h2
-          class="text-center text-4xl mb-8 font-honey"
-          data-aos="zoom-in-up"
-          data-aos-duration="1500"
-          data-aos-once="true"
-        >
-          Atar Satria Fikri, <span class="text-2xl">S.e., M.Ak.</span>
-        </h2>
-        <p
-          class="text-center w-[90%] mx-auto"
-          data-aos="zoom-in-down"
-          data-aos-duration="1500"
-          data-aos-once="true"
-        >
-          <b>Putra</b> dari Bapak <b>Dr. H. M. Saman Sulaiman, M.A.</b> <br />
-          & Ibu
-          <b>Hj. Darniati</b>
-        </p>
-
-        <!-- <img
+        <img
           src="../../public/decoration-2.png"
           class="w-full mt-4 rotate-180"
-        /> -->
+        />
       </div>
     </div>
 

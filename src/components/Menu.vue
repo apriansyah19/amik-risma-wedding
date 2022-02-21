@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="fixed bottom-5 left-1/2 w-[90%] rounded-full -translate-x-[50%] bg-[#958277] z-49 shadow-lg"
+    class="fixed bottom-5 left-1/2 w-[90%] rounded-full -translate-x-[50%] bg-[#958277] z-[100] shadow-lg"
   >
     <div class="flex justify-evenly items-center gap-2 px-2">
       <a
