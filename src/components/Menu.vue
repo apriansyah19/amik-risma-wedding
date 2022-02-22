@@ -1,6 +1,7 @@
 <template>
   <nav
     class="fixed bottom-5 left-1/2 w-[90%] rounded-full -translate-x-[50%] bg-[#958277] z-[100] shadow-lg"
+    v-if="!modal"
   >
     <div class="flex justify-evenly items-center gap-2 px-2">
       <a
@@ -63,7 +64,7 @@
           alt=""
         />
       </a>
-      <a class="my-2 p-1 rounded-ful" href="#couple" v-smooth-scroll>
+      <a class="my-2 p-1 rounded-ful" href="#ucapan" v-smooth-scroll>
         <img
           src="@/assets/images/menu-4.png"
           class="h-[40px] w-[40px]"
@@ -77,5 +78,6 @@
 <script>
 export default {
   name: "Menu",
+  props: ["modal"],
 };
 </script>

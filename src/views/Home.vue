@@ -3,6 +3,9 @@
     class="h-screen w-screen bg-[#fff] py-8 text-[#958277] font-[300] font-akaya flex relative z-20 transition-transform ease-in-out delay-500"
     :class="[show ? '-translate-y-full' : '']"
   >
+    <audio id="audio" loop>
+      <source src="../assets/audios/backsound.mp3" type="audio/mpeg" />
+    </audio>
     <div class="min-h-1/2 w-4/5 m-auto">
       <h1 class="font-honey text-3xl text-center tracking-[10px] mb-2">T&A</h1>
       <img src="../../public/decoration-2.png" class="w-full" />
@@ -37,7 +40,7 @@
       </p>
       <div class="animate-[fade-in-top_1s_ease-in-out_2.5s_both]">
         <button
-          @click="show = !show"
+          @click="clickOpen"
           class="animate-bounce px-2 py-2 bg-[#958277] text-white rounded-lg mt-8 hover:opacity-80 focus:outline-none active:outline-none text-base block mx-auto"
         >
           Open Invitation
@@ -52,7 +55,18 @@
     v-if="show"
     :class="[modal ? 'overflow-y-hidden' : 'overflow-y-visible']"
   >
-    <Menu />
+    <Menu :modal="modal" />
+
+    <button
+      @click="onClickMuted"
+      class="z-[48] fixed bottom-[40%] right-1 outline-none active:border-none focus:border-none p-2 bg-[#958277] rounded-full flex"
+    >
+      <i
+        class="text-white fas m-auto align-middle"
+        :class="[!muted ? 'fa-volume-up' : 'fa-volume-mute']"
+      ></i>
+    </button>
+
     <div class="min-h-screen w-screen flex bg-[#fff]">
       <Modal :withButton="false" @toggle-modal="modal = false" />
 
@@ -170,16 +184,16 @@
 
           <div class="m-auto">
             <h2
-              class="text-center text-4xl px-1 font-honey"
+              class="text-center text-3xl px-2 font-hurricane"
               data-aos="zoom-in-up"
               data-aos-duration="1500"
               data-aos-once="true"
             >
-              <span class="text-2xl">Apt.</span> Tiara Aritsya,
-              <span class="text-2xl">S.Farm.</span>
+              <span class="text-xl">Apt.</span> Tiara Aritsya,
+              <span class="text-xl">S.Farm.</span>
             </h2>
             <p
-              class="text-center w-[90%] mx-auto mt-6 leading-4 px-2"
+              class="text-center w-[90%] text-sm mx-auto mt-4 leading-4 px-2"
               data-aos="zoom-in-down"
               data-aos-duration="1500"
               data-aos-once="true"
@@ -213,18 +227,18 @@
         </h1>
 
         <div class="columns-2 flex">
-          <div class="m-auto">
+          <div class="m-auto w-full">
             <h2
-              class="text-center text-4xl px-1 font-honey"
+              class="text-center text-2xl px-2 font-hurricane"
               data-aos="zoom-in-up"
               data-aos-duration="1500"
               data-aos-once="true"
             >
-              Atar Satria Fikri, <span class="text-2xl">S.e., M.Ak.</span>
+              Atar Satria Fikri, <span class="text-xl">S.e., M.Ak.</span>
             </h2>
 
             <p
-              class="text-center w-[90%] mx-auto leading-4 mt-6 px-2"
+              class="text-center w-[90%] text-sm mx-auto leading-4 mt-4 px-2"
               data-aos="zoom-in-down"
               data-aos-duration="1500"
               data-aos-once="true"
@@ -279,16 +293,39 @@
     </div>
 
     <div class="min-h-screen w-screen flex bg-[#fff] font-akaya" id="dday">
-      <div class="min-h-1/2 w-4/5 m-auto pb-36">
+      <div class="min-h-1/2 w-full m-auto pb-36">
         <img src="../../public/decoration-2.png" class="w-full mb-4" />
         <h1
-          class="text-3xl text-center mb-8"
+          class="text-4xl text-center mb-4 font-honey"
           data-aos="zoom-in-up"
           data-aos-duration="1500"
           data-aos-once="true"
         >
           إِن شَآءَ ٱللَّهُ
         </h1>
+
+        <div class="w-full h-full relative">
+          <img
+            src="../assets/images/ta-2.jpg"
+            class="w-full h-full"
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+            data-aos-once="true"
+            alt=""
+          />
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+            class="absolute bottom-0"
+          >
+            <path
+              fill="#fff"
+              fill-opacity="1"
+              d="M0,160L40,165.3C80,171,160,181,240,208C320,235,400,277,480,277.3C560,277,640,235,720,224C800,213,880,235,960,245.3C1040,256,1120,256,1200,245.3C1280,235,1360,213,1400,202.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
 
         <div
           class="flex justify-evenly items-center mb-8"
@@ -297,15 +334,11 @@
           data-aos-once="true"
         >
           <div>
-            <h1 class="text-4xl font-honey">Tiara</h1>
-          </div>
-          <div class="text-4xl font-honey">&</div>
-          <div>
-            <h1 class="text-4xl font-honey">Atar</h1>
+            <h1 class="text-4xl font-honey">Tiara & Atar</h1>
           </div>
         </div>
         <p
-          class="text-center mb-4"
+          class="text-center mb-4 px-4"
           data-aos="zoom-in-up"
           data-aos-duration="1500"
           data-aos-once="true"
@@ -356,10 +389,10 @@
             </div>
           </Countdown>
         </div>
-        <img
+        <!-- <img
           src="../../public/decoration-2.png"
           class="w-full mt-6 rotate-180"
-        />
+        /> -->
       </div>
     </div>
 
@@ -427,6 +460,100 @@
         />
       </div>
     </div>
+
+    <div class="min-h-screen w-screen flex bg-[#fff] font-akaya" id="ucapan">
+      <div class="min-h-1/2 px-6 m-auto pb-36">
+        <img src="../../public/decoration-2.png" class="w-full mb-4" />
+        <h1
+          class="text-center text-3xl mb-4 font-honey"
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
+          data-aos-once="true"
+        >
+          Ucapkan Sesuatu
+        </h1>
+
+        <p class="text-center mb-4">Berikan Ucapan & Do'a Restu</p>
+
+        <input
+          type="text"
+          class="p-2 border-2 border-[#CED4D9] rounded-lg w-full mb-4 bg-[#FFF9F6] text-[#958277] placeholder:text-[#958277]"
+          placeholder="Nama anda ..."
+        />
+
+        <textarea
+          class="p-2 border-2 border-[#CED4D9] rounded-lg w-full mb-4 bg-[#FFF9F6] text-[#958277] placeholder:text-[#958277]"
+          cols="30"
+          rows="3"
+          placeholder="Berikan Ucapan & Do'a Restu"
+        ></textarea>
+
+        <div class="animate-[fade-in-top_1s_ease-in-out_2.5s_both]">
+          <button
+            @click="clickOpen"
+            class="animate-bounce min-w-[75px] px-2 py-2 bg-[#958277] text-white rounded-lg hover:opacity-80 focus:outline-none active:outline-none text-base block mx-auto mb-4"
+          >
+            Kirim
+          </button>
+        </div>
+
+        <hr class="mb-6" />
+
+        <div
+          class="p-2 h-[150px] shadow-lg rounded-lg border-[1px] border-[#CED4D9] bg-[#FFF9F6] flex flex-col w-[90%] mx-auto mb-4"
+        >
+          <div class="flex justify-between items-center mb-2">
+            <h1 class="text-lg font-bold">Ulvi Zasvia - Jambi</h1>
+            <span
+              class="bg-[#958277] rounded-xl text-white text-xs px-1 py-[2px]"
+              ><i class="fas fa-check"></i> Hadir</span
+            >
+          </div>
+          <div class="italic text-sm overflow-y-scroll w-full h-full">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit
+            tenetur fugiat adipisci amet dolorem eius officia qui eligendi
+            similique commodi.
+          </div>
+        </div>
+        <div
+          class="p-2 h-[150px] shadow-lg rounded-lg border-[1px] border-[#CED4D9] bg-[#FFF9F6] flex flex-col w-[90%] mx-auto mb-4"
+        >
+          <div class="flex justify-between items-center mb-2">
+            <h1 class="text-lg font-bold">John Doe - Jambi</h1>
+            <span
+              class="bg-[#958277] rounded-xl text-white text-xs px-1 py-[2px]"
+              ><i class="fas fa-check"></i> Hadir</span
+            >
+          </div>
+          <div class="italic text-sm overflow-y-scroll w-full h-full pr-3">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
+            itaque doloribus molestias eius incidunt, tenetur rerum, cumque
+            excepturi animi vel iusto
+          </div>
+        </div>
+        <div
+          class="p-2 h-[150px] shadow-lg rounded-lg border-[1px] border-[#CED4D9] bg-[#FFF9F6] flex flex-col w-[90%] mx-auto mb-4"
+        >
+          <div class="flex justify-between items-center mb-2">
+            <h1 class="text-lg font-bold">Fika Wulandari - Jambi</h1>
+            <span
+              class="bg-[#958277] rounded-xl text-white text-xs px-1 py-[2px]"
+              ><i class="fas fa-times"></i> Tidak Hadir</span
+            >
+          </div>
+          <div class="italic text-sm overflow-y-scroll w-full h-full">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit
+            tenetur fugiat adipisci amet dolorem eius officia qui eligendi
+            similique commodi.
+          </div>
+        </div>
+
+        <img
+          src="../../public/decoration-2.png"
+          class="w-full mt-4 rotate-180"
+        />
+      </div>
+    </div>
   </section>
 </template>
 
@@ -448,6 +575,7 @@ export default {
     return {
       show: false,
       modal: true,
+      muted: false,
       list: [
         "btn-kata-pengantar",
         "btn-mempelai-wanita",
@@ -456,6 +584,18 @@ export default {
         "btn-lokasi",
       ],
     };
+  },
+  methods: {
+    clickOpen() {
+      this.show = true;
+      const audio = document.getElementById("audio");
+      audio.play();
+    },
+    onClickMuted() {
+      const audio = document.getElementById("audio");
+      this.muted = !this.muted;
+      audio.muted = this.muted;
+    },
   },
   computed: {
     dday() {
