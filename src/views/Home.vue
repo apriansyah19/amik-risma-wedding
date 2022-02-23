@@ -159,7 +159,7 @@
               data-aos-duration="1500"
               data-aos-once="true"
             >
-              <span class="text-xl">Apt.</span> Tiara Aritsya,
+              <span class="text-xl">Apt.</span> Tiara Aristya,
               <span class="text-xl">S.Farm.</span>
             </h2>
             <p
