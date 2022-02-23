@@ -12,7 +12,7 @@
       <h2
         class="uppercase text-center tracking-[1px] mt-6 text-[calc(20px*0.75)] animate-[fade-in-top_1s_ease-in-out_0.8s_both]"
       >
-        Wedding of
+        Pernikahan dari
       </h2>
       <h1
         class="text-center text-[calc(70px*0.75)] leading-[1] tracking-[2px] mt-4 pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_1.1s_both] font-honey"
@@ -22,28 +22,30 @@
       <h2
         class="uppercase text-center tracking-[1px] my-2 text-[calc(20px*0.75)] animate-[fade-in-bottom_1s_ease-in-out_1.5s_both]"
       >
-        Sunday, March 6<sup class="lowercase">th</sup> 2022
+        Minggu, 6 Maret 2022
       </h2>
 
       <h2
-        class="uppercase text-center tracking-[1px] mt-12 text-[calc(16px*0.75)] animate-[fade-in-top_1s_ease-in-out_1.8s_both]"
+        class="uppercase text-center tracking-[1px] mt-12 text-[calc(14px*0.75)] animate-[fade-in-top_1s_ease-in-out_1.8s_both]"
       >
-        Dear
+        Yang terhormat
       </h2>
       <h1
         class="text-center font-akaya text-[calc(36px*0.75)] leading-[1] tracking-[2px] pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_2.1s_both]"
       >
         Ulvi Zasvia
       </h1>
-      <p class="text-center animate-[fade-in-bottom_1s_ease-in-out_2.4s_both]">
-        We invite you to attend our wedding
+      <p
+        class="text-center animate-[fade-in-bottom_1s_ease-in-out_2.4s_both] px-4"
+      >
+        Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami
       </p>
       <div class="animate-[fade-in-top_1s_ease-in-out_2.5s_both]">
         <button
           @click="clickOpen"
           class="animate-bounce px-2 py-2 bg-[#958277] text-white rounded-lg mt-8 hover:opacity-80 focus:outline-none active:outline-none text-base block mx-auto"
         >
-          Open Invitation
+          <i class="fas fa-heart text-red-500 shadow"></i> Buka Undangan
         </button>
       </div>
       <img src="../../public/decoration-2.png" class="w-full mt-8 rotate-180" />
@@ -67,8 +69,8 @@
       ></i>
     </button>
 
-    <div class="min-h-screen w-screen flex bg-[#fff]">
-      <Modal :withButton="false" @toggle-modal="modal = false" />
+    <Modal :withButton="false" @toggle-modal="modal = false" />
+    <!-- <div class="min-h-screen w-screen flex bg-[#fff]">
 
       <div class="min-h-1/2 w-4/5 m-auto">
         <img src="../../public/decoration-2.png" class="w-full rotate-180" />
@@ -81,7 +83,7 @@
         </p>
         <img src="../../public/decoration-2.png" class="w-full mt-8" />
       </div>
-    </div>
+    </div> -->
 
     <div
       class="min-h-screen w-screen flex bg-[#fff] font-akaya"
@@ -90,19 +92,11 @@
       <div class="min-h-1/2 w-4/5 m-auto pb-36">
         <img src="../../public/decoration-2.png" class="w-full mb-4" />
         <img
-          data-aos="zoom-in-up"
-          data-aos-duration="1500"
-          data-aos-once="true"
           src="../assets/images/bismillah.png"
           class="w-3/5 mx-auto mb-6"
           alt="bismillah"
         />
-        <h1
-          class="text-center text-3xl mb-8 font-honey"
-          data-aos="zoom-in-down"
-          data-aos-duration="1500"
-          data-aos-once="true"
-        >
+        <h1 class="text-center text-3xl mb-8 font-honey">
           Assalamualaikum Wr. Wb.
         </h1>
         <p
@@ -111,8 +105,9 @@
           data-aos-duration="1500"
           data-aos-once="true"
         >
-          Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i
-          serta Kerabat sekalian untuk menghadiri acara pernikahan kami.
+          Mahasuci Allah SWT telah menciptakan mahluk hidup dengan
+          berpasang-pasangan. Begitu pula manusia. Sungguh besar rahmat dan
+          karunia yang diberikan-Nya kepada keluarga kami.
         </p>
         <p
           class="text-base text-center my-4 leading-5"
@@ -120,10 +115,8 @@
           data-aos-duration="1500"
           data-aos-once="true"
         >
-          Dikarenakan Semakin berkembangnya penyebaran Covid-19 di Kota Jambi,
-          merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
-          Bapak/Ibu/Saudara/i berkenan hadir pada saat resepsi dan memberikan
-          Do’a Restu kepada kedua mempelai.
+          Maka izinkan kami mengundang sekaligus megharapkan doa restu dari
+          bapak/ibu dan saudara/i dalam acara pernikahan kami
         </p>
         <img
           src="../../public/decoration-2.png"
@@ -148,18 +141,7 @@
         </h1>
 
         <div class="columns-2 flex">
-          <div class="w-2/3 h-full relative">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1440 320"
-              class="absolute top-0 rotate-180 z-20"
-            >
-              <path
-                fill="#fff"
-                fill-opacity="1"
-                d="M0,160L40,165.3C80,171,160,181,240,208C320,235,400,277,480,277.3C560,277,640,235,720,224C800,213,880,235,960,245.3C1040,256,1120,256,1200,245.3C1280,235,1360,213,1400,202.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-              ></path>
-            </svg>
+          <div class="w-1/3 h-full relative">
             <img
               src="../assets/images/tiara.png"
               class="w-full h-full"
@@ -168,23 +150,11 @@
               data-aos-once="true"
               alt=""
             />
-
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1440 320"
-              class="absolute bottom-0"
-            >
-              <path
-                fill="#fff"
-                fill-opacity="1"
-                d="M0,160L40,165.3C80,171,160,181,240,208C320,235,400,277,480,277.3C560,277,640,235,720,224C800,213,880,235,960,245.3C1040,256,1120,256,1200,245.3C1280,235,1360,213,1400,202.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-              ></path>
-            </svg>
           </div>
 
-          <div class="m-auto">
+          <div class="m-auto w-2/3">
             <h2
-              class="text-center text-3xl px-2 font-hurricane"
+              class="text-center text-3xl px-2 font-hurricane w-full"
               data-aos="zoom-in-up"
               data-aos-duration="1500"
               data-aos-once="true"
@@ -193,13 +163,14 @@
               <span class="text-xl">S.Farm.</span>
             </h2>
             <p
-              class="text-center w-[90%] text-sm mx-auto mt-4 leading-4 px-2"
+              class="text-center w-full text-sm mx-auto mt-4 leading-4 px-2"
               data-aos="zoom-in-down"
               data-aos-duration="1500"
               data-aos-once="true"
             >
-              <b>Putri</b> dari Bapak <b>Syaiful Anwar, S.H.</b> & Ibu
-              <b>Dra. Ermayani Arifin</b>
+              <b>Putri</b> dari Bapak <br />
+              <b>Syaiful Anwar, S.H.</b> <br />
+              & Ibu <b>Dra. Ermayani</b>
             </p>
           </div>
         </div>
@@ -227,7 +198,7 @@
         </h1>
 
         <div class="columns-2 flex">
-          <div class="m-auto w-full">
+          <div class="m-auto w-2/3">
             <h2
               class="text-center text-2xl px-2 font-hurricane"
               data-aos="zoom-in-up"
@@ -243,25 +214,15 @@
               data-aos-duration="1500"
               data-aos-once="true"
             >
-              <b>Putra</b> dari Bapak <b>Dr. H. M. Saman Sulaiman, M.A.</b>
+              <b>Putra</b> dari Bapak
+              <b> <br />Dr. H. M. Saman Sulaiman, M.A.</b>
               <br />
               & Ibu
               <b>Hj. Darniati</b>
             </p>
           </div>
 
-          <div class="w-2/3 h-full relative">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1440 320"
-              class="absolute top-0 rotate-180 z-20"
-            >
-              <path
-                fill="#fff"
-                fill-opacity="1"
-                d="M0,160L40,165.3C80,171,160,181,240,208C320,235,400,277,480,277.3C560,277,640,235,720,224C800,213,880,235,960,245.3C1040,256,1120,256,1200,245.3C1280,235,1360,213,1400,202.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-              ></path>
-            </svg>
+          <div class="w-1/3 h-full relative">
             <img
               src="../assets/images/atar.png"
               class="w-full h-full"
@@ -270,18 +231,6 @@
               data-aos-once="true"
               alt=""
             />
-
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1440 320"
-              class="absolute bottom-0"
-            >
-              <path
-                fill="#fff"
-                fill-opacity="1"
-                d="M0,160L40,165.3C80,171,160,181,240,208C320,235,400,277,480,277.3C560,277,640,235,720,224C800,213,880,235,960,245.3C1040,256,1120,256,1200,245.3C1280,235,1360,213,1400,202.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-              ></path>
-            </svg>
           </div>
         </div>
 
@@ -295,100 +244,102 @@
     <div class="min-h-screen w-screen flex bg-[#fff] font-akaya" id="dday">
       <div class="min-h-1/2 w-full m-auto pb-36">
         <img src="../../public/decoration-2.png" class="w-full mb-4" />
-        <h1
-          class="text-4xl text-center mb-4 font-honey"
-          data-aos="zoom-in-up"
-          data-aos-duration="1500"
-          data-aos-once="true"
-        >
-          إِن شَآءَ ٱللَّهُ
-        </h1>
 
         <div class="w-full h-full relative">
-          <img
-            src="../assets/images/ta-2.jpg"
+          <!-- <img
+            src="../assets/images/ta-2.png"
             class="w-full h-full"
             data-aos="zoom-in-up"
             data-aos-duration="1500"
             data-aos-once="true"
             alt=""
-          />
-
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1440 320"
-            class="absolute bottom-0"
-          >
-            <path
-              fill="#fff"
-              fill-opacity="1"
-              d="M0,160L40,165.3C80,171,160,181,240,208C320,235,400,277,480,277.3C560,277,640,235,720,224C800,213,880,235,960,245.3C1040,256,1120,256,1200,245.3C1280,235,1360,213,1400,202.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-            ></path>
-          </svg>
+          /> -->
         </div>
 
-        <div
-          class="flex justify-evenly items-center mb-8"
-          data-aos="zoom-in-down"
-          data-aos-duration="1500"
-          data-aos-once="true"
-        >
-          <div>
-            <h1 class="text-4xl font-honey">Tiara & Atar</h1>
+        <div class="w-full h-full py-4">
+          <div
+            class="flex justify-evenly items-center mb-4"
+            data-aos="zoom-in-down"
+            data-aos-duration="1500"
+            data-aos-once="true"
+          >
+            <h1 class="text-4xl font-honey mt-2">Tiara & Atar</h1>
           </div>
-        </div>
-        <p
-          class="text-center mb-4 px-4"
-          data-aos="zoom-in-up"
-          data-aos-duration="1500"
-          data-aos-once="true"
-        >
-          akan melaksanakan <b>Akad Nikah</b> dan <b>Resepsi</b> pada tanggal:
-        </p>
-        <h1
-          class="text-xl text-center font-akaya mb-4"
-          data-aos="zoom-in-down"
-          data-aos-duration="1500"
-          data-aos-once="true"
-        >
-          Minggu, 6 Maret 2022
-        </h1>
-        <div
-          data-aos="zoom-in-up"
-          data-aos-duration="1500"
-          data-aos-once="true"
-        >
-          <Countdown
-            :time="dday"
-            v-slot="{ days, hours, minutes, seconds }"
-            v-if="dday > 0"
+          <p
+            class="text-center mb-4 px-4"
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+            data-aos-once="true"
           >
-            <div
-              class="flex justify-center items-stretch text-white gap-4 text-akaya"
+            akan melaksanakan
+          </p>
+          <div
+            class="w-[80%] bg-[url(./ta-1.jpg)] bg-[#cfc3bd] h-[170px] bg-blend-multiply bg-center bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
+            data-aos="zoom-in-down"
+            data-aos-duration="1500"
+            data-aos-once="true"
+          >
+            <h1 class="font-honey text-xl text-center mb-4">Akad Nikah</h1>
+            <p class="text-center text-sm">
+              <i class="fas fa-calendar"></i> Minggu, 6 Maret 2022
+            </p>
+            <p class="text-center text-sm">
+              <i class="fas fa-clock"></i> 08:00 - 10:00 WIB
+            </p>
+          </div>
+          <div
+            class="w-[80%] bg-[url(./ta-2.jpeg)] bg-[#dfd1c4] h-[170px] bg-blend-multiply bg-center bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
+            data-aos="zoom-in-down"
+            data-aos-duration="1500"
+            data-aos-once="true"
+          >
+            <h1 class="font-honey text-xl text-center mb-4">Resepsi</h1>
+            <p class="text-center text-sm">
+              <i class="fas fa-calendar"></i> Minggu, 6 Maret 2022
+            </p>
+            <p class="text-center text-sm">
+              <i class="fas fa-clock"></i> 11:00 - Selesai WIB
+            </p>
+          </div>
+
+          <div
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+            data-aos-once="true"
+          >
+            <Countdown
+              :time="dday"
+              v-slot="{ days, hours, minutes, seconds }"
+              v-if="dday > 0"
             >
               <div
-                class="font-akaya rounded-lg bg-[#958277] w-[60px] p-1 text-center"
+                class="flex justify-center items-stretch text-white gap-4 text-akaya"
               >
-                {{ days }} <br />Hari
+                <div
+                  class="font-akaya rounded-lg bg-[#958277] w-[60px] p-1 text-center"
+                >
+                  {{ days }} <br />Hari
+                </div>
+                <div
+                  class="font-akaya rounded-lg bg-[#958277] w-[60px] p-1 text-center"
+                >
+                  {{ hours }} <br />Jam
+                </div>
+                <div
+                  class="font-akaya rounded-lg bg-[#958277] w-[60px] p-1 text-center"
+                >
+                  {{ minutes }} <br />Menit
+                </div>
+                <div
+                  class="font-akaya rounded-lg bg-[#958277] w-[60px] p-1 text-center"
+                >
+                  {{ seconds }} <br />Detik
+                </div>
               </div>
-              <div
-                class="font-akaya rounded-lg bg-[#958277] w-[60px] p-1 text-center"
-              >
-                {{ hours }} <br />Jam
-              </div>
-              <div
-                class="font-akaya rounded-lg bg-[#958277] w-[60px] p-1 text-center"
-              >
-                {{ minutes }} <br />Menit
-              </div>
-              <div
-                class="font-akaya rounded-lg bg-[#958277] w-[60px] p-1 text-center"
-              >
-                {{ seconds }} <br />Detik
-              </div>
-            </div>
-          </Countdown>
+            </Countdown>
+          </div>
         </div>
+
         <!-- <img
           src="../../public/decoration-2.png"
           class="w-full mt-6 rotate-180"
@@ -480,6 +431,13 @@
           class="p-2 border-2 border-[#CED4D9] rounded-lg w-full mb-4 bg-[#FFF9F6] text-[#958277] placeholder:text-[#958277]"
           placeholder="Nama anda ..."
         />
+
+        <select
+          class="w-full rounded-lg p-2 border-2 border-[#CED4D9] mb-4 bg-[#FFF9F6] text-[#958277] placeholder:text-[#958277]"
+        >
+          <option value="hadir" selected>Hadir</option>
+          <option value="tidak">Tidak Hadir</option>
+        </select>
 
         <textarea
           class="p-2 border-2 border-[#CED4D9] rounded-lg w-full mb-4 bg-[#FFF9F6] text-[#958277] placeholder:text-[#958277]"
