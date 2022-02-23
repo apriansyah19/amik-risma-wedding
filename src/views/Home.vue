@@ -31,9 +31,9 @@
         Yang terhormat
       </h2>
       <h1
-        class="text-center font-akaya text-[calc(36px*0.75)] leading-[1] tracking-[2px] pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_2.1s_both]"
+        class="text-center font-akaya text-[calc(36px*0.75)] leading-[1] tracking-[2px] pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_2.1s_both] capitalize"
       >
-        Ulvi Zasvia
+        {{ undangan }}
       </h1>
       <p
         class="text-center animate-[fade-in-bottom_1s_ease-in-out_2.4s_both] px-4"
@@ -57,6 +57,7 @@
     v-if="show"
     :class="[modal ? 'overflow-y-hidden' : 'overflow-y-visible']"
   >
+    <Loading v-if="loading" />
     <Menu :modal="modal" />
 
     <button
@@ -428,19 +429,23 @@
 
         <input
           type="text"
-          class="p-2 border-2 border-[#CED4D9] rounded-lg w-full mb-4 bg-[#FFF9F6] text-[#958277] placeholder:text-[#958277]"
-          placeholder="Nama anda ..."
+          class="p-2 border-2 border-[#CED4D9] rounded-lg w-full mb-4 bg-[#FFF9F6] text-[#958277] placeholder:text-[#958277] font-sans text-[12px]"
+          placeholder="Nama Anda"
+          v-model="nama"
         />
 
         <select
-          class="w-full rounded-lg p-2 border-2 border-[#CED4D9] mb-4 bg-[#FFF9F6] text-[#958277] placeholder:text-[#958277]"
+          class="w-full rounded-lg p-2 border-2 border-[#CED4D9] mb-4 bg-[#FFF9F6] text-[#958277] placeholder:text-[#958277] font-sans text-[12px]"
+          v-model="konfirmasi"
         >
-          <option value="hadir" selected>Hadir</option>
+          <option :value="null">Pilih Konfirmasi Kehadiran</option>
+          <option value="hadir">Hadir</option>
           <option value="tidak">Tidak Hadir</option>
         </select>
 
         <textarea
-          class="p-2 border-2 border-[#CED4D9] rounded-lg w-full mb-4 bg-[#FFF9F6] text-[#958277] placeholder:text-[#958277]"
+          class="p-2 border-2 border-[#CED4D9] rounded-lg w-full mb-4 bg-[#FFF9F6] text-[#958277] placeholder:text-[#958277] font-sans text-[12px]"
+          v-model="ucap"
           cols="30"
           rows="3"
           placeholder="Berikan Ucapan & Do'a Restu"
@@ -448,68 +453,81 @@
 
         <div class="animate-[fade-in-top_1s_ease-in-out_2.5s_both]">
           <button
-            @click="clickOpen"
+            @click="onClickKirim"
             class="animate-bounce min-w-[75px] px-2 py-2 bg-[#958277] text-white rounded-lg hover:opacity-80 focus:outline-none active:outline-none text-base block mx-auto mb-4"
           >
             Kirim
           </button>
         </div>
 
-        <hr class="mb-6" />
+        <img
+          src="../../public/decoration-2.png"
+          class="w-full mb-4 rotate-180"
+        />
 
         <div
-          class="p-2 h-[150px] shadow-lg rounded-lg border-[1px] border-[#CED4D9] bg-[#FFF9F6] flex flex-col w-[90%] mx-auto mb-4"
+          class="p-2 max-h-[150px] shadow-lg rounded-lg border-[1px] border-[#CED4D9] bg-[#FFF9F6] flex flex-col w-[90%] mx-auto mb-4 font-sans"
+          v-for="ucapan in ucapan"
+          :key="ucapan.id"
         >
-          <div class="flex justify-between items-center mb-2">
-            <h1 class="text-lg font-bold">Ulvi Zasvia - Jambi</h1>
+          <div class="flex justify-between text-sm items-center mb-2">
+            <h1 class="text-xs font-bold capitalize">{{ ucapan.nama }}</h1>
             <span
-              class="bg-[#958277] rounded-xl text-white text-xs px-1 py-[2px]"
+              class="bg-[#958277] rounded-xl text-white text-[8px] px-1 py-[2px]"
+              v-if="ucapan.konfirmasi === 'hadir'"
               ><i class="fas fa-check"></i> Hadir</span
             >
-          </div>
-          <div class="italic text-sm overflow-y-scroll w-full h-full">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit
-            tenetur fugiat adipisci amet dolorem eius officia qui eligendi
-            similique commodi.
-          </div>
-        </div>
-        <div
-          class="p-2 h-[150px] shadow-lg rounded-lg border-[1px] border-[#CED4D9] bg-[#FFF9F6] flex flex-col w-[90%] mx-auto mb-4"
-        >
-          <div class="flex justify-between items-center mb-2">
-            <h1 class="text-lg font-bold">John Doe - Jambi</h1>
             <span
-              class="bg-[#958277] rounded-xl text-white text-xs px-1 py-[2px]"
-              ><i class="fas fa-check"></i> Hadir</span
-            >
-          </div>
-          <div class="italic text-sm overflow-y-scroll w-full h-full pr-3">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
-            itaque doloribus molestias eius incidunt, tenetur rerum, cumque
-            excepturi animi vel iusto
-          </div>
-        </div>
-        <div
-          class="p-2 h-[150px] shadow-lg rounded-lg border-[1px] border-[#CED4D9] bg-[#FFF9F6] flex flex-col w-[90%] mx-auto mb-4"
-        >
-          <div class="flex justify-between items-center mb-2">
-            <h1 class="text-lg font-bold">Fika Wulandari - Jambi</h1>
-            <span
-              class="bg-[#958277] rounded-xl text-white text-xs px-1 py-[2px]"
+              class="bg-[#958277] rounded-xl text-white text-[8px] px-1 py-[2px] self-baseline"
+              v-else
               ><i class="fas fa-times"></i> Tidak Hadir</span
             >
           </div>
-          <div class="italic text-sm overflow-y-scroll w-full h-full">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit
-            tenetur fugiat adipisci amet dolorem eius officia qui eligendi
-            similique commodi.
+          <div class="italic text-xs overflow-y-scroll w-full h-full">
+            "{{ ucapan.ucapan }}"
           </div>
         </div>
 
-        <img
-          src="../../public/decoration-2.png"
-          class="w-full mt-4 rotate-180"
-        />
+        <div class="w-full flex justify-center items-center">
+          <button
+            class="py-[2px] px-4 bg-[#958277] border-r-2 rounded text-white text-center"
+            :class="[index === offset / limit ? 'opacity-70' : '']"
+            @click="index !== offset / limit ? clickNext(index * limit) : ''"
+            v-for="(data, index) in Math.ceil(allUcapanLength / limit)"
+            :key="index"
+          >
+            {{ index + 1 }}
+          </button>
+        </div>
+
+        <img src="../../public/decoration-2.png" class="w-full mt-12 rotate" />
+
+        <div class="mt-8">
+          <h1
+            class="text-center text-3xl mb-4 font-honey"
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+            data-aos-once="true"
+          >
+            Dompet Digital
+          </h1>
+
+          <div
+            class="mt-4 p-4 bg-[url('./pattern.jpg')] bg-contain rounded-lg shadow-lg shadow-slate-400"
+          >
+            <img
+              src="../assets/images/logo-bca.png"
+              class="w-28 mx-auto mb-8"
+              alt=""
+            />
+            <p class="text-center font-bold">119 127 1837</p>
+            <p class="text-center text-xl">a/n Tiara Aristya</p>
+          </div>
+          <img
+            src="../../public/decoration-2.png"
+            class="w-full mt-8 rotate-180"
+          />
+        </div>
       </div>
     </div>
   </section>
@@ -518,6 +536,9 @@
 <script>
 import Modal from "../components/Modal.vue";
 import Menu from "../components/Menu.vue";
+import Loading from "../components/Loading.vue";
+import axios from "axios";
+import Swal from "sweetalert2";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Countdown from "@chenfengyuan/vue-countdown";
@@ -528,12 +549,15 @@ export default {
     Modal,
     Countdown,
     Menu,
+    Loading,
   },
   data() {
     return {
       show: false,
       modal: true,
       muted: false,
+      loading: false,
+      undangan: this.$route.params.nama,
       list: [
         "btn-kata-pengantar",
         "btn-mempelai-wanita",
@@ -541,6 +565,14 @@ export default {
         "btn-dday",
         "btn-lokasi",
       ],
+      offset: 0,
+      limit: 4,
+      ucapan: [],
+      allUcapanLength: 0,
+      // ? Data for Input
+      nama: null,
+      konfirmasi: null,
+      ucap: null,
     };
   },
   methods: {
@@ -554,6 +586,131 @@ export default {
       this.muted = !this.muted;
       audio.muted = this.muted;
     },
+    async onClickKirim() {
+      this.loading = true;
+      const temp = await this.kirimUcapan();
+      if (temp === 1) {
+        this.offset = 0;
+        this.allUcapanLength = await this.ucapanLength();
+        this.ucapan = await this.loadUcapan();
+        this.loading = false;
+        Swal.fire({
+          icon: "success",
+          title: "Yeay!",
+          html: `Ucapan & Do'a berhasil dikirim,<br> Terima Kasih`,
+        });
+      } else {
+        this.loading = false;
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: `Ucapan gagal dikirim!`,
+        });
+      }
+    },
+    async kirimUcapan() {
+      const API_URL = "https://fueremi-hasura.herokuapp.com/v1/graphql";
+      const API_HEADERS = {
+        "Content-Type": "application/json",
+        "x-hasura-admin-secret": "18032405",
+      };
+
+      const API_QUERY = `
+      mutation MyMutation {
+        insert_tiara_atar_wedding_ucapan(objects: {konfirmasi: "${this.konfirmasi}", nama: "${this.nama}", ucapan: "${this.ucap}"}) {
+          affected_rows
+        }
+      }
+      `;
+      try {
+        const data = await axios.post(
+          API_URL,
+          { query: API_QUERY },
+          { headers: API_HEADERS }
+        );
+        return data.data.data.insert_tiara_atar_wedding_ucapan.affected_rows;
+      } catch (error) {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: `${error}`,
+        });
+        return;
+      }
+    },
+    async clickNext(number) {
+      this.loading = true;
+      this.offset = number;
+      this.ucapan = await this.loadUcapan();
+      this.loading = false;
+    },
+    async ucapanLength() {
+      const API_URL = "https://fueremi-hasura.herokuapp.com/v1/graphql";
+      const API_HEADERS = {
+        "Content-Type": "application/json",
+        "x-hasura-admin-secret": "18032405",
+      };
+
+      const API_QUERY = `
+      query MyQuery {
+        tiara_atar_wedding_ucapan_aggregate {
+          aggregate {
+            count
+          }
+        }
+      }
+      `;
+      try {
+        const data = await axios.post(
+          API_URL,
+          { query: API_QUERY },
+          { headers: API_HEADERS }
+        );
+        return data.data.data.tiara_atar_wedding_ucapan_aggregate.aggregate
+          .count;
+      } catch (error) {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: `${error}`,
+        });
+        return;
+      }
+    },
+    async loadUcapan() {
+      const API_URL = "https://fueremi-hasura.herokuapp.com/v1/graphql";
+      const API_HEADERS = {
+        "Content-Type": "application/json",
+        "x-hasura-admin-secret": "18032405",
+      };
+
+      const API_QUERY = `
+      query MyQuery {
+        tiara_atar_wedding_ucapan(offset: ${this.offset}, limit: ${this.limit}, order_by: {created_at: desc}) {
+          ucapan
+          nama
+          konfirmasi
+          id
+          created_at
+        }
+      }
+      `;
+      try {
+        const data = await axios.post(
+          API_URL,
+          { query: API_QUERY },
+          { headers: API_HEADERS }
+        );
+        return data.data.data.tiara_atar_wedding_ucapan;
+      } catch (error) {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: `${error}`,
+        });
+        return;
+      }
+    },
   },
   computed: {
     dday() {
@@ -562,8 +719,12 @@ export default {
       );
     },
   },
-  created() {
+  async created() {
     AOS.init();
+    this.loading = true;
+    this.ucapan = await this.loadUcapan();
+    this.allUcapanLength = await this.ucapanLength();
+    this.loading = false;
   },
   // watch: {
   //   modal() {
