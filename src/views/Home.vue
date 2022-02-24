@@ -116,7 +116,7 @@
           data-aos-duration="1500"
           data-aos-once="true"
         >
-          Maka izinkan kami mengundang sekaligus megharapkan doa restu dari
+          Maka izinkan kami mengundang sekaligus mengharapkan doa restu dari
           bapak/ibu dan saudara/i dalam acara pernikahan kami
         </p>
         <img
@@ -160,7 +160,7 @@
               data-aos-duration="1500"
               data-aos-once="true"
             >
-              <span class="text-xl">Apt.</span> Tiara Aristya,
+              <span class="text-xl">apt.</span> Tiara Aristya,
               <span class="text-xl">S.Farm.</span>
             </h2>
             <p
@@ -206,7 +206,7 @@
               data-aos-duration="1500"
               data-aos-once="true"
             >
-              Atar Satria Fikri, <span class="text-xl">S.e., M.Ak.</span>
+              Atar Satria Fikri, <span class="text-xl">S.E., M.Ak.</span>
             </h2>
 
             <p
@@ -425,18 +425,31 @@
           Ucapkan Sesuatu
         </h1>
 
-        <p class="text-center mb-4">Berikan Ucapan & Do'a Restu</p>
+        <p
+          class="text-center mb-4"
+          data-aos="zoom-in-down"
+          data-aos-duration="1500"
+          data-aos-once="true"
+        >
+          Berikan Ucapan & Do'a Restu
+        </p>
 
         <input
           type="text"
           class="p-2 border-2 border-[#CED4D9] rounded-lg w-full mb-4 bg-[#FFF9F6] text-[#958277] placeholder:text-[#958277] font-sans text-[12px]"
           placeholder="Nama Anda"
           v-model="nama"
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
+          data-aos-once="true"
         />
 
         <select
           class="w-full rounded-lg p-2 border-2 border-[#CED4D9] mb-4 bg-[#FFF9F6] text-[#958277] placeholder:text-[#958277] font-sans text-[12px]"
           v-model="konfirmasi"
+          data-aos="zoom-in-down"
+          data-aos-duration="1500"
+          data-aos-once="true"
         >
           <option :value="null">Pilih Konfirmasi Kehadiran</option>
           <option value="hadir">Hadir</option>
@@ -449,9 +462,17 @@
           cols="30"
           rows="3"
           placeholder="Berikan Ucapan & Do'a Restu"
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
+          data-aos-once="true"
         ></textarea>
 
-        <div class="animate-[fade-in-top_1s_ease-in-out_2.5s_both]">
+        <div
+          class="animate-[fade-in-top_1s_ease-in-out_2.5s_both]"
+          data-aos="zoom-in-down"
+          data-aos-duration="1500"
+          data-aos-once="true"
+        >
           <button
             @click="onClickKirim"
             class="animate-bounce min-w-[75px] px-2 py-2 bg-[#958277] text-white rounded-lg hover:opacity-80 focus:outline-none active:outline-none text-base block mx-auto mb-4"
@@ -469,6 +490,9 @@
           class="p-2 max-h-[150px] shadow-lg rounded-lg border-[1px] border-[#CED4D9] bg-[#FFF9F6] flex flex-col w-[90%] mx-auto mb-4 font-sans"
           v-for="ucapan in ucapan"
           :key="ucapan.id"
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
+          data-aos-once="true"
         >
           <div class="flex justify-between text-sm items-center mb-2">
             <h1 class="text-xs font-bold capitalize">{{ ucapan.nama }}</h1>
@@ -488,7 +512,12 @@
           </div>
         </div>
 
-        <div class="w-full flex justify-center items-center">
+        <div
+          class="w-full flex justify-center items-center"
+          data-aos="zoom-in-down"
+          data-aos-duration="1500"
+          data-aos-once="true"
+        >
           <button
             class="py-[2px] px-4 bg-[#958277] border-r-2 rounded text-white text-center"
             :class="[index === offset / limit ? 'opacity-70' : '']"
@@ -514,6 +543,9 @@
 
           <div
             class="mt-4 p-4 bg-[url('./pattern.jpg')] bg-contain rounded-lg shadow-lg shadow-slate-400"
+            data-aos="zoom-in-down"
+            data-aos-duration="1500"
+            data-aos-once="true"
           >
             <img
               src="../assets/images/logo-bca.png"
