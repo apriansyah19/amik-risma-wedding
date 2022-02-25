@@ -28,7 +28,11 @@
     class="w-screen h-screen font-akaya flex justify-center items-center flex-col p-6 text-[#958277]"
     v-if="login"
   >
-    <h1 class="text-2xl mb-6">Undangan Otomatis (Whatsapp)</h1>
+    <h1 class="text-2xl mb-6">Undangan Otomatis</h1>
+
+    <small class="text-red-500 mb-2"
+      >*harus masukkan nomor WA untuk kirim by WA</small
+    >
     <input
       type="text"
       v-model="noWA"
@@ -41,15 +45,23 @@
       placeholder="Nama ..."
       class="border-[1px] border-[#958277] rounded-md py-2 px-1 mb-4 text-xs w-48 text-[#958277]"
     />
-    <!-- `https://wa.me/${this.noWA}?text=Assalamualaikum%20Wr.%20Wb.%0A%0AKami%20ingin%20mengundang%20anda%20untuk%20menghadiri%20pernikahan%20kami%0A%0Ahttps://tiara-atar-wedding.netlify.app/${temp}`,
-        "_blank" -->
-    <a
-      @click.prevent="onClickKirim"
-      target="_blank"
+
+    <input type="hidden" id="testing-code" :value="igDM" />
+
+    <button
+      :disabled="noWA === '+628' || noWA.length <= 10"
+      @click.prevent="onClickKirimWA"
+      class="animate-bounce min-w-[75px] px-2 py-2 bg-[#958277] text-white rounded-lg hover:opacity-80 focus:outline-none active:outline-none text-xs block mx-auto mb-4 disabled:opacity-50"
+    >
+      Kirim Undangan (WA)
+    </button>
+
+    <button
+      @click.stop.prevent="onClickKirimIG"
       class="animate-bounce min-w-[75px] px-2 py-2 bg-[#958277] text-white rounded-lg hover:opacity-80 focus:outline-none active:outline-none text-xs block mx-auto mb-4"
     >
-      Kirim Undangan
-    </a>
+      Kirim Undangan (IG)
+    </button>
   </div>
 </template>
 
@@ -66,10 +78,11 @@ export default {
       noWA: "+628",
       nama: "",
       link: null,
+      igDM: null,
     };
   },
   methods: {
-    onClickKirim() {
+    onClickKirimWA() {
       this.nama = this.nama.replace(/ /g, ".").replace("&", "=");
       window.open(
         `https://wa.me/${this.noWA.replace(
@@ -80,6 +93,28 @@ export default {
         }`,
         "_blank"
       );
+      this.nama = "";
+      this.noWA = "+628";
+    },
+    onClickKirimIG() {
+      this.nama = this.nama.replace(/ /g, ".").replace("&", "=");
+      this.igDM = `Assalamualaikum Wr. Wb. Kami ingin mengundang anda untuk menghadiri pernikahan kami https://tiara-atar-wedding.netlify.app/${this.nama}`;
+
+      let testingCodeToCopy = document.querySelector("#testing-code");
+      testingCodeToCopy.setAttribute("type", "text"); // 不是 hidden 才能複製
+      testingCodeToCopy.select();
+
+      try {
+        var successful = document.execCommand("copy");
+        var msg = successful ? "successful" : "unsuccessful";
+        alert("Testing code was copied " + msg);
+      } catch (err) {
+        alert("Oops, unable to copy");
+      }
+
+      /* unselect the range */
+      testingCodeToCopy.setAttribute("type", "hidden");
+      window.getSelection().removeAllRanges();
       this.nama = "";
       this.noWA = "+628";
     },
