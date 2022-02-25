@@ -1,5 +1,5 @@
 <template>
-  <!-- <div
+  <div
     class="w-screen h-screen font-akaya flex justify-center items-center flex-col p-6"
     v-if="!login"
   >
@@ -22,11 +22,11 @@
     >
       Kirim
     </button>
-  </div> -->
+  </div>
 
   <div
     class="w-screen h-screen font-akaya flex justify-center items-center flex-col p-6 text-[#958277]"
-    v-if="!login"
+    v-if="login"
   >
     <h1 class="text-2xl mb-6">Undangan Otomatis (Whatsapp)</h1>
     <input
@@ -92,7 +92,7 @@ export default {
         });
         return;
       } else if (
-        this.username === "atartiara" &&
+        this.username.toLowerCase() === "atartiara" &&
         this.password === "06032022"
       ) {
         Swal.fire({
@@ -101,6 +101,13 @@ export default {
           text: `Selamat datang Kak Ara dan Bang Atar`,
         });
         this.login = true;
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: `Salah Password`,
+        });
+        this.password = null;
       }
     },
   },
