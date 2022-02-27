@@ -37,7 +37,7 @@
         <h1
           class="text-center font-akaya text-[calc(36px*0.75)] leading-[1] tracking-[2px] pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_2.1s_both] capitalize"
         >
-          {{ undangan.replace(/\./g, " ").replace(/\=/g, "&") }}
+          {{ undangan.replace(/\;/g, " ").replace(/\=/g, "&") }}
         </h1>
         <p
           class="text-center animate-[fade-in-bottom_1s_ease-in-out_2.4s_both] px-4"
