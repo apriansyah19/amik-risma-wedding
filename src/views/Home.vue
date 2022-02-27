@@ -281,7 +281,7 @@
               akan melaksanakan
             </p>
             <div
-              class="w-[80%] bg-[url(./ta-1.jpg)] bg-[#cfc3bd] h-[170px] bg-blend-multiply bg-center bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
+              class="w-[80%] bg-[url(./ta-1.jpg)] bg-[#cfc3bd] h-[170px] bg-blend-multiply bg-top bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
               data-aos="zoom-in-down"
               data-aos-duration="1500"
               data-aos-once="true"
@@ -295,7 +295,7 @@
               </p>
             </div>
             <div
-              class="w-[80%] bg-[url(./ta-2.jpeg)] bg-[#dfd1c4] h-[170px] bg-blend-multiply bg-center bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
+              class="w-[80%] bg-[url(./ta-2.jpeg)] bg-[#dfd1c4] h-[170px] bg-blend-multiply bg-top bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
               data-aos="zoom-in-down"
               data-aos-duration="1500"
               data-aos-once="true"
