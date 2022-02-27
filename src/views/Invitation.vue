@@ -131,7 +131,7 @@ Wassalamu'alaikum Wr. Wb.
         title: "Yeay...",
         html: `Undangan berhasil di copy ke clipboard <br> Silahkan tempel (paste) ke IG DM/ WA Group`,
       });
-      // parentElement.removeChild(mySmartTextarea);
+      mySmartTextarea.remove();
 
       this.nama = "";
       this.noWA = "+628";
