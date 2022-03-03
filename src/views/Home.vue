@@ -1,6 +1,5 @@
 <template>
   <div class="h-screen w-screen flex justify-center">
-    <Loading v-if="loading" />
     <div
       class="h-full w-full md:w-1/3 md:mx-auto bg-[#fff] py-8 text-[#958277] font-[300] font-akaya flex relative z-20 transition-transform ease-in-out delay-500"
       :class="[show ? '-translate-y-full' : '']"
@@ -578,7 +577,6 @@
 <script>
 import Modal from "../components/Modal.vue";
 import Menu from "../components/Menu.vue";
-import Loading from "../components/Loading.vue";
 import axios from "axios";
 import Swal from "sweetalert2";
 import AOS from "aos";
@@ -591,7 +589,6 @@ export default {
     Modal,
     Countdown,
     Menu,
-    Loading,
   },
   data() {
     return {
