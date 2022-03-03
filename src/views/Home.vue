@@ -343,6 +343,20 @@
                   </div>
                 </div>
               </Countdown>
+
+              <div
+                v-else-if="-86484928 < dday"
+                class="p-3 bg-[#958277] text-white text-lg mx-10 text-center shadow rounded-[10px]"
+              >
+                Acara sedang Berlangsung Hari Ini!
+              </div>
+              <div
+                v-else
+                class="p-3 bg-[#958277] text-white text-lg mx-10 text-center shadow rounded-[10px]"
+              >
+                Acara sudah Selesai!
+              </div>
+              <!-- <div v></div> -->
             </div>
           </div>
 
@@ -754,7 +768,7 @@ export default {
   computed: {
     dday() {
       return (
-        new Date("March 6, 2022 09:00:00").getTime() - new Date().getTime()
+        new Date("March 6, 2022 08:00:00").getTime() - new Date().getTime()
       );
     },
   },
