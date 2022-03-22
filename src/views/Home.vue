@@ -1,16 +1,13 @@
 <template>
   <div class="h-screen w-screen flex justify-center">
     <div
-      class="h-full w-full md:w-1/3 md:mx-auto bg-[#fff] py-8 text-[#958277] font-[300] font-akaya flex relative z-20 transition-transform ease-in-out delay-500"
+      class="h-full w-full md:w-1/3 md:mx-auto bg-[#000000] py-8 text-[#958277] font-[300] font-akaya flex relative z-20 transition-transform ease-in-out delay-500"
       :class="[show ? '-translate-y-full' : '']"
     >
       <audio id="audio" loop>
         <source src="../assets/audios/backsound.mp3" type="audio/mpeg" />
       </audio>
       <div class="min-h-1/2 w-4/5 m-auto">
-        <h1 class="font-honey text-3xl text-center tracking-[10px] mb-2">
-          S&T
-        </h1>
         <img src="../../public/decoration-2.png" class="w-full" />
         <h2
           class="uppercase text-center tracking-[1px] mt-6 text-[calc(20px*0.75)] animate-[fade-in-top_1s_ease-in-out_0.8s_both]"
@@ -18,7 +15,7 @@
           Pernikahan dari
         </h2>
         <h1
-          class="text-center text-[calc(70px*0.75)] leading-[1] tracking-[2px] mt-4 pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_1.1s_both] font-honey"
+          class="text-center text-[calc(70px*0.75)] leading-[1] tracking-[2px] mt-4 pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_1.1s_both]"
         >
           Soni & Tuti
         </h1>
@@ -92,7 +89,7 @@
     </div> -->
 
       <div
-        class="min-h-screen w-full md:mx-auto flex bg-[#fff] font-akaya"
+        class="min-h-screen w-full md:mx-auto flex bg-[#000000] font-akaya"
         id="kata-pengantar"
       >
         <div class="min-h-1/2 w-4/5 m-auto pb-36">
@@ -132,7 +129,7 @@
       </div>
 
       <div
-        class="min-h-screen w-full mx-auto flex bg-[#fff] font-akaya"
+        class="min-h-screen w-full mx-auto flex bg-[#000000] font-akaya"
         id="mempelai-wanita"
       >
         <div class="min-h-1/2 w-full m-auto pb-36">
@@ -189,7 +186,7 @@
       </div>
 
       <div
-        class="min-h-screen w-full flex bg-[#fff] font-akaya"
+        class="min-h-screen w-full flex bg-[#000000] font-akaya"
         id="mempelai-pria"
       >
         <div class="min-h-1/2 w-full m-auto pb-36">
@@ -247,7 +244,7 @@
         </div>
       </div>
 
-      <div class="min-h-screen w-full flex bg-[#fff] font-akaya" id="dday">
+      <div class="min-h-screen w-full flex bg-[#000000] font-akaya" id="dday">
         <div class="min-h-1/2 w-full m-auto pb-36">
           <img src="../../public/decoration-2.png" class="w-full mb-4" />
 
@@ -367,7 +364,7 @@
         </div>
       </div>
 
-      <div class="min-h-screen w-full flex bg-[#fff] font-akaya" id="lokasi">
+      <div class="min-h-screen w-full flex bg-[#000000] font-akaya" id="lokasi">
         <div class="min-h-1/2 w-4/5 m-auto pb-36">
           <img src="../../public/decoration-2.png" class="w-full mb-4" />
           <h1
@@ -431,7 +428,7 @@
         </div>
       </div>
 
-      <div class="min-h-screen w-full flex bg-[#fff] font-akaya" id="ucapan">
+      <div class="min-h-screen w-full flex bg-[#000000] font-akaya" id="ucapan">
         <div class="min-h-1/2 px-6 m-auto pb-36">
           <img src="../../public/decoration-2.png" class="w-full mb-4" />
           <h1
@@ -537,7 +534,7 @@
             data-aos-once="true"
           >
             <button
-              class="py-[2px] px-4 bg-[#958277] border-r-2 rounded text-white text-center"
+              class="py-[2px] px-4 bg-[#958277] border-x-2 rounded text-white text-center"
               :class="[index === offset / limit ? 'opacity-70' : '']"
               @click="index !== offset / limit ? clickNext(index * limit) : ''"
               v-for="(data, index) in Math.ceil(allUcapanLength / limit)"
