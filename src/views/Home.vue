@@ -9,7 +9,7 @@
       </audio>
       <div class="min-h-1/2 w-4/5 m-auto">
         <h1 class="font-honey text-3xl text-center tracking-[10px] mb-2">
-          T&A
+          S&T
         </h1>
         <img src="../../public/decoration-2.png" class="w-full" />
         <h2
@@ -20,12 +20,12 @@
         <h1
           class="text-center text-[calc(70px*0.75)] leading-[1] tracking-[2px] mt-4 pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_1.1s_both] font-honey"
         >
-          Tiara & Atar
+          Soni & Tuti
         </h1>
         <h2
           class="uppercase text-center tracking-[1px] my-2 text-[calc(20px*0.75)] animate-[fade-in-bottom_1s_ease-in-out_1.5s_both]"
         >
-          Minggu, 6 Maret 2022
+          Rabu, 18 Mei 2022
         </h2>
 
         <h2
@@ -149,7 +149,7 @@
           <div class="columns-2 flex">
             <div class="w-1/3 h-full relative">
               <img
-                src="../assets/images/tiara.png"
+                src="../assets/images/tutihasanah.png"
                 class="w-full h-full"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
@@ -165,8 +165,8 @@
                 data-aos-duration="1500"
                 data-aos-once="true"
               >
-                <span class="text-xl">apt.</span> Tiara Aristya,
-                <span class="text-xl">S.Farm.</span>
+                 Tuti Hasanah,
+                <span class="text-xl">S.Kom.</span>
               </h2>
               <p
                 class="text-center w-full text-sm mx-auto mt-4 leading-4 px-2"
@@ -175,8 +175,8 @@
                 data-aos-once="true"
               >
                 <b>Putri</b> dari Bapak <br />
-                <b>Syaiful Anwar, S.H.</b> <br />
-                & Ibu <b>Dra. Ermayani</b>
+                <b>Tuti</b> <br />
+                & Ibu <b>Tuti</b>
               </p>
             </div>
           </div>
@@ -211,7 +211,7 @@
                 data-aos-duration="1500"
                 data-aos-once="true"
               >
-                Atar Satria Fikri, <span class="text-xl">S.E., M.Ak.</span>
+                Soni Putrawan, <span class="text-xl">A.Md.</span>
               </h2>
 
               <p
@@ -221,16 +221,16 @@
                 data-aos-once="true"
               >
                 <b>Putra</b> dari Bapak
-                <b> <br />Dr. H. M. Saman Sulaiman, M.A.</b>
+                <b> <br />Soni</b>
                 <br />
                 & Ibu
-                <b>Hj. Darniati</b>
+                <b>Soni</b>
               </p>
             </div>
 
             <div class="w-1/3 h-full relative">
               <img
-                src="../assets/images/atar.png"
+                src="../assets/images/soniputrawan.png"
                 class="w-full h-full"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
@@ -269,7 +269,7 @@
               data-aos-duration="1500"
               data-aos-once="true"
             >
-              <h1 class="text-4xl font-honey mt-2">Tiara & Atar</h1>
+              <h1 class="text-4xl font-honey mt-2">Soni & Tuti</h1>
             </div>
             <p
               class="text-center mb-4 px-4"
@@ -280,28 +280,28 @@
               akan melaksanakan
             </p>
             <div
-              class="w-[80%] bg-[url(./ta-1.jpg)] bg-[#cfc3bd] h-[170px] bg-blend-multiply bg-top bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
+              class="w-[80%] bg-[url(./image1.png)] bg-[#cfc3bd] h-[170px] bg-blend-multiply bg-top bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
               data-aos="zoom-in-down"
               data-aos-duration="1500"
               data-aos-once="true"
             >
               <h1 class="font-honey text-xl text-center mb-4">Akad Nikah</h1>
               <p class="text-center text-sm">
-                <i class="fas fa-calendar"></i> Minggu, 6 Maret 2022
+                <i class="fas fa-calendar"></i> Rabu, 18 Mei 2022
               </p>
               <p class="text-center text-sm">
                 <i class="fas fa-clock"></i> 08:00 - 10:00 WIB
               </p>
             </div>
             <div
-              class="w-[80%] bg-[url(./ta-2.jpeg)] bg-[#dfd1c4] h-[170px] bg-blend-multiply bg-top bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
+              class="w-[80%] bg-[url(./image2.png)] bg-[#dfd1c4] h-[170px] bg-blend-multiply bg-top bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
               data-aos="zoom-in-down"
               data-aos-duration="1500"
               data-aos-once="true"
             >
               <h1 class="font-honey text-xl text-center mb-4">Resepsi</h1>
               <p class="text-center text-sm">
-                <i class="fas fa-calendar"></i> Minggu, 6 Maret 2022
+                <i class="fas fa-calendar"></i> Rabu, 18 Mei 2022
               </p>
               <p class="text-center text-sm">
                 <i class="fas fa-clock"></i> 11:00 - Selesai WIB
@@ -392,7 +392,7 @@
             data-aos-duration="1500"
             data-aos-once="true"
           >
-            Gedung UIN Sulthan Thaha Saifuddin
+            Tempat Lokasi
           </h2>
           <h3
             class="text-center text-base mt-2"
@@ -400,7 +400,7 @@
             data-aos-duration="1500"
             data-aos-once="true"
           >
-            Minggu, 6 <sup>th</sup> Maret 2022
+            Rabu, 18 <sup>th</sup> Mei 2022
           </h3>
           <p
             class="text-center text-xs mt-2"
@@ -408,8 +408,7 @@
             data-aos-duration="1500"
             data-aos-once="true"
           >
-            Jl. Arif Rahman Hakim No.111, Simpang IV Sipin, Kec. Telanaipura,
-            Kota Jambi, Jambi 36361
+            Disini Keterangan Lokasi
           </p>
           <div
             class="w-full flex"
@@ -419,7 +418,7 @@
           >
             <a
               target="_blank"
-              href="https://goo.gl/maps/2nPxsXJMoCHRqswDA"
+              href="https://goo.gl/maps/qPzhNa3gJezPRKw29"
               class="animate-bounce px-2 py-2 max-w-xl bg-[#958277] text-white rounded-lg mt-8 hover:opacity-80 focus:outline-none active:outline-none text-base text-center inline-block mx-auto"
             >
               Lihat Lokasi
@@ -570,12 +569,12 @@
               data-aos-once="true"
             >
               <img
-                src="../assets/images/logo-bca.png"
+                src="../assets/images/logo-mandiri.png"
                 class="w-28 mx-auto mb-8"
                 alt=""
               />
-              <p class="text-center font-bold">119 127 1837</p>
-              <p class="text-center text-xl">a/n Tiara Aristya</p>
+              <p class="text-center font-bold">113-00-1170212-7</p>
+              <p class="text-center text-xl">a/n Tuti Hasanah</p>
             </div>
             <img
               src="../../public/decoration-2.png"
@@ -768,7 +767,7 @@ export default {
   computed: {
     dday() {
       return (
-        new Date("March 6, 2022 08:00:00").getTime() - new Date().getTime()
+        new Date("May 18, 2022 08:00:00").getTime() - new Date().getTime()
       );
     },
   },
