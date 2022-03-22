@@ -88,9 +88,11 @@ export default {
         `https://wa.me/${this.noWA.replace(
           /[^a-zA-Z 0-9+]+/g,
           ""
-        )}?text=Bismillahirrahmanirrahim%0A%0AAssalamualaikum%20Wr.%20Wb.%0ATanpa%20mengurangi%20rasa%20hormat,%20perkenankan%20kami%20mengundang%20Bapak/Ibu/Saudara/i,%20teman%20sekaligus%20sahabat,%20untuk%20menghadiri%20acara%20pernikahan%20kami:%0A%0Aapt.%20Tiara%20Aristya,%20S.Farm.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dan%0AAtar%20Satria%20Fikri,%20S.E.,%20M.%20Ak%0A%0AGedung%20UIN%20Sulthan%20Thaha%20Saifuddin%0AMinggu,%206%20Maret%202022%0A%0ABerikut%20link%20undangan%20kami%20untuk%20info%20lengkap%20dari%20acara%20bisa%20kunjungi:%0A%0Ahttps://tiara-atar-wedding.netlify.app/${
-          this.nama
-        };%0A%0AMerupakan%20suatu%20kebahagiaan%20bagi%20kami%20apabila%20Bapak/Ibu/Saudara/i%20berkenan%20untuk%20hadir%20dan%20memberikan%20doa%20restu%0A%0ATerima%20kasih%0AWassalamu'alaikum%20Wr.%20Wb.`,
+        )}?text=Bismillahirrahmanirrahim%0A%20%20%20%20%20%20%0AAssalamualaikum%20Wr.%20Wb.%0ATanpa%20mengurangi%20rasa%20hormat%2C%20perkenankan%20kami%20mengundang%20Bapak%2FIbu%2FSaudara%2Fi%2C%20teman%20sekaligus%20sahabat%2C%20untuk%20menghadiri%20acara%20pernikahan%20kami%3A%0A%20%20%20%20%20%20%0ATuti%20Hasanah%2C%20S.Kom.%0A%20%20%20%20%20%20%20%20%20%20dan%0ASoni%20Putrawan%2C%20A.Md.%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0ADaerah%20Rumah%20Soni%0ARabu%2C%2018%20Mei%202022%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0ABerikut%20link%20undangan%20kami%20untuk%20info%20lengkap%20dari%20acara%20bisa%20kunjungi%3A%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A
+        
+        https://soni-tuti-wedding.netlify.app/${this.nama}
+        
+        %0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0AMerupakan%20suatu%20kebahagiaan%20bagi%20kami%20apabila%20Bapak%2FIbu%2FSaudara%2Fi%20berkenan%20untuk%20hadir%20dan%20memberikan%20doa%20restu%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0ATerima%20kasih%20%0AWassalamu%27alaikum%20Wr.%20Wb.%0A`,
         "_blank"
       );
       this.nama = "";
@@ -103,16 +105,16 @@ export default {
 Assalamualaikum Wr. Wb.
 Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i, teman sekaligus sahabat, untuk menghadiri acara pernikahan kami:
       
-apt. Tiara Aristya, S.Farm.
+Tuti Hasanah, S.Kom.
           dan
-Atar Satria Fikri, S.E., M. Ak 
+Soni Putrawan, A.Md. 
                  
-Gedung UIN Sulthan Thaha Saifuddin 
-Minggu, 6 Maret 2022 
+Daerah Rumah Soni
+Rabu, 18 Mei 2022 
                  
 Berikut link undangan kami untuk info lengkap dari acara bisa kunjungi: 
                  
-https://tiara-atar-wedding.netlify.app/${this.nama}; 
+https://soni-tuti-wedding.netlify.app/${this.nama}; 
                  
 Merupakan suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan untuk hadir dan memberikan doa restu 
                  
@@ -145,13 +147,13 @@ Wassalamu'alaikum Wr. Wb.
         });
         return;
       } else if (
-        this.username.toLowerCase() === "atartiara" &&
-        this.password === "06032022"
+        this.username.toLowerCase() === "sonituti" &&
+        this.password === "18052022"
       ) {
         Swal.fire({
           icon: "success",
           title: "Yeay...",
-          text: `Selamat datang Kak Ara dan Bang Atar`,
+          text: `Selamat datang Soni dan Tuti`,
         });
         this.login = true;
       } else {
