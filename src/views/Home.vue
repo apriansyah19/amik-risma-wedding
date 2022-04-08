@@ -175,7 +175,7 @@
                 data-aos-once="true"
               >
                  Tuti Hasanah,
-                <span class="text-xl">S.Kom.</span>
+                <span class="text-xl">S.I.Kom.</span>
               </h2>
               <p
                 class="text-center w-full text-sm mx-auto mt-4 leading-4 px-2"
@@ -303,7 +303,7 @@
               </p>
             </div>
             <div
-              class="w-[80%] bg-[url(./tuti_soni3.jpg)] bg-[#dfd1c4] h-[250px] bg-blend-multiply bg-top bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
+              class="w-[80%] bg-[url(./tuti_soni3.jpg)] h-[250px] bg-blend-multiply bg-top bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
               data-aos="zoom-in-down"
               data-aos-duration="1500"
               data-aos-once="true"
@@ -434,6 +434,106 @@
               Lihat Lokasi
             </a>
           </div>
+          <img
+            src="../../public/decoration-2.png"
+            class="w-full mt-4 rotate-180"
+          />
+        </div>
+      </div>
+
+      <div
+        class="min-h-screen w-full flex bg-[#000000] font-akaya"
+        id="galeri-foto"
+      >
+        <div class="min-h-1/2 w-full m-auto pb-36">
+          <img src="../../public/decoration-2.png" class="w-full mb-4" />
+
+          <h1
+            class="text-center text-3xl mb-4"
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+            data-aos-once="true"
+          >
+            Galeri Foto
+          </h1>
+
+          <div class="flex m-auto">
+
+            <div class="w-1/3 h-full relative ml-3">
+              <img
+                src="../assets/images/foto_1.jpg"
+                class="w-full h-full rounded-xl shadow-2xl shadow-emerald-900"
+                data-aos="zoom-in-up"
+                data-aos-duration="1500"
+                data-aos-once="true"
+                alt=""
+              />
+            </div>
+
+            <div class="w-1/3 h-full relative mx-2">
+              <img
+                src="../assets/images/foto_2.jpg"
+                class="w-full h-full rounded-xl shadow-2xl shadow-emerald-900"
+                data-aos="zoom-in-up"
+                data-aos-duration="1500"
+                data-aos-once="true"
+                alt=""
+              />
+            </div>
+
+            <div class="w-1/3 h-full relative mr-3">
+              <img
+                src="../assets/images/foto_3.jpg"
+                class="w-full h-full rounded-xl shadow-2xl shadow-emerald-900"
+                data-aos="zoom-in-up"
+                data-aos-duration="1500"
+                data-aos-once="true"
+                alt=""
+              />
+            </div>
+            
+          </div>
+
+          <div class="flex m-auto mt-4">
+            <!-- <div class="m-auto w-2/3">
+
+            </div> -->
+
+            <div class="w-1/3 h-full relative ml-3">
+              <img
+                src="../assets/images/tuti_hasanah.jpg"
+                class="w-full h-full rounded-xl shadow-2xl shadow-emerald-900"
+                data-aos="zoom-in-up"
+                data-aos-duration="1500"
+                data-aos-once="true"
+                alt=""
+              />
+            </div>
+
+            <div class="w-1/3 h-full relative mx-2">
+              <img
+                src="../assets/images/foto_4.jpg"
+                class="w-full h-full rounded-xl shadow-2xl shadow-emerald-900"
+                data-aos="zoom-in-up"
+                data-aos-duration="1500"
+                data-aos-once="true"
+                alt=""
+              />
+            </div>
+
+            <div class="w-1/3 h-full relative mr-3">
+              <img
+                src="../assets/images/soni_putrawan.jpg"
+                class="w-full h-full rounded-xl shadow-2xl shadow-emerald-900"
+                data-aos="zoom-in-up"
+                data-aos-duration="1500"
+                data-aos-once="true"
+                alt=""
+              />
+            </div>
+            
+          </div>
+
           <img
             src="../../public/decoration-2.png"
             class="w-full mt-4 rotate-180"
