@@ -88,11 +88,11 @@ export default {
         `https://wa.me/${this.noWA.replace(
           /[^a-zA-Z 0-9+]+/g,
           ""
-        )}?text=Bismillahirrahmanirrahim%0A%20%20%20%20%20%20%0AAssalamualaikum%20Wr.%20Wb.%0ATanpa%20mengurangi%20rasa%20hormat%2C%20perkenankan%20kami%20mengundang%20Bapak%2FIbu%2FSaudara%2Fi%2C%20teman%20sekaligus%20sahabat%2C%20untuk%20menghadiri%20acara%20pernikahan%20kami%3A%0A%20%20%20%20%20%20%0ATuti%20Hasanah%2C%20S.Kom.%0A%20%20%20%20%20%20%20%20%20%20dan%0ASoni%20Putrawan%2C%20A.Md.%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0ADaerah%20Rumah%20Soni%0ARabu%2C%2018%20Mei%202022%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0ABerikut%20link%20undangan%20kami%20untuk%20info%20lengkap%20dari%20acara%20bisa%20kunjungi%3A%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A
+        )}?text=Bismillahirrahmanirrahim%0A%20%20%20%20%20%20%0AAssalamualaikum%20Wr.%20Wb.%0ATanpa%20mengurangi%20rasa%20hormat%2C%20perkenankan%20kami%20mengundang%20Bapak%2FIbu%2FSaudara%2Fi%2C%20teman%20sekaligus%20sahabat%2C%20untuk%20menghadiri%20acara%20pernikahan%20kami%3A%0A%20%20%20%20%20%20%0ATuti%20Hasanah%2C%20S.Kom.%0A%20%20%20%20%20%20%20%20%20%20dan%0ASoni%20Putrawan%2C%20A.Md.%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0ADesa%20ciptodadi%20kec.%20Sukakarya%20Musirawas%20Lubuklinggau%0ARabu%2C%2018%20Mei%202022%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0ABerikut%20link%20undangan%20kami%20untuk%20info%20lengkap%20dari%20acara%20bisa%20kunjungi%3A%0A%0A
         
         https://soni-tuti-wedding.netlify.app/${this.nama}
-        
-        %0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0AMerupakan%20suatu%20kebahagiaan%20bagi%20kami%20apabila%20Bapak%2FIbu%2FSaudara%2Fi%20berkenan%20untuk%20hadir%20dan%20memberikan%20doa%20restu%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0ATerima%20kasih%20%0AWassalamu%27alaikum%20Wr.%20Wb.%0A`,
+
+        %20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0AMerupakan%20suatu%20kebahagiaan%20bagi%20kami%20apabila%20Bapak%2FIbu%2FSaudara%2Fi%20berkenan%20untuk%20hadir%20dan%20memberikan%20doa%20restu%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0ATerima%20kasih%20%0AWassalamu%27alaikum%20Wr.%20Wb.`,
         "_blank"
       );
       this.nama = "";
@@ -109,7 +109,7 @@ Tuti Hasanah, S.Kom.
           dan
 Soni Putrawan, A.Md. 
                  
-Daerah Rumah Soni
+Desa ciptodadi kec. Sukakarya Musirawas Lubuklinggau
 Rabu, 18 Mei 2022 
                  
 Berikut link undangan kami untuk info lengkap dari acara bisa kunjungi: 

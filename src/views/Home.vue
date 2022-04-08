@@ -9,34 +9,45 @@
       </audio>
       <div class="min-h-1/2 w-4/5 m-auto">
         <img src="../../public/decoration-2.png" class="w-full" />
-        <h2
+        <!-- <h2
           class="uppercase text-center tracking-[1px] mt-6 text-[calc(20px*0.75)] animate-[fade-in-top_1s_ease-in-out_0.8s_both]"
         >
           Pernikahan dari
-        </h2>
+        </h2> -->
+        <div class="w-2/5 h-full m-auto mt-3">
+         <img
+                src="../assets/images/soni_tuti2.jpg"
+                class="w-full h-full rounded-xl shadow-2xl shadow-emerald-900"
+                data-aos="zoom-in-up"
+                data-aos-duration="1500"
+                data-aos-once="true"
+                alt=""
+              />
+        </div>
+
         <h1
-          class="text-center text-[calc(70px*0.75)] leading-[1] tracking-[2px] mt-4 pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_1.1s_both]"
+          class="text-center text-[calc(50px*0.75)] leading-[1] tracking-[2px] mt-4 pt-4 animate-[scale-in-bottom_1s_ease-in-out_1.1s_both]"
         >
           Soni & Tuti
         </h1>
-        <h2
+        <!-- <h2
           class="uppercase text-center tracking-[1px] my-2 text-[calc(20px*0.75)] animate-[fade-in-bottom_1s_ease-in-out_1.5s_both]"
         >
           Rabu, 18 Mei 2022
-        </h2>
+        </h2> -->
 
         <h2
-          class="uppercase text-center tracking-[1px] mt-12 text-[calc(14px*0.75)] animate-[fade-in-top_1s_ease-in-out_1.8s_both]"
+          class="uppercase text-center tracking-[1px] mt-8 text-[calc(14px*0.75)] animate-[fade-in-top_1s_ease-in-out_1.8s_both]"
         >
           Yang terhormat
         </h2>
         <h1
-          class="text-center font-akaya text-[calc(36px*0.75)] leading-[1] tracking-[2px] pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_2.1s_both] capitalize"
+          class="text-center text-[#f8f8f8] font-akaya text-[calc(36px*0.75)] leading-[1] tracking-[2px] pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_2.1s_both] capitalize"
         >
           {{ undangan.replace(/\;/g, " ").replace(/\=/g, "&") }}
         </h1>
         <p
-          class="text-center animate-[fade-in-bottom_1s_ease-in-out_2.4s_both] px-4"
+          class="text-center text-[calc(15px*0.75)] animate-[fade-in-bottom_1s_ease-in-out_2.4s_both] px-4"
         >
           Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami
         </p>
@@ -48,15 +59,15 @@
             <i class="fas fa-heart text-red-500 shadow"></i> Buka Undangan
           </button>
         </div>
-        <img
+        <!-- <img
           src="../../public/decoration-2.png"
           class="w-full mt-8 rotate-180"
-        />
+        /> -->
       </div>
     </div>
 
     <div
-      class="w-full h-full md:w-1/3 md:mx-auto bg-[#fff] absolute z-0 top-0 text-[#958277]"
+      class="w-full h-full md:w-1/3 md:mx-auto bg-[#000000] absolute z-0 top-0 text-[#958277]"
       v-if="show"
       :class="[modal ? 'overflow-y-hidden' : 'overflow-y-visible']"
     >
@@ -92,6 +103,7 @@
         class="min-h-screen w-full md:mx-auto flex bg-[#000000] font-akaya"
         id="kata-pengantar"
       >
+
         <div class="min-h-1/2 w-4/5 m-auto pb-36">
           <img src="../../public/decoration-2.png" class="w-full mb-4" />
           <img
@@ -99,7 +111,7 @@
             class="w-3/5 mx-auto mb-6"
             alt="bismillah"
           />
-          <h1 class="text-center text-3xl mb-8 font-honey">
+          <h1 class="text-center text-3xl mb-8">
             Assalamualaikum Wr. Wb.
           </h1>
           <p
@@ -135,7 +147,7 @@
         <div class="min-h-1/2 w-full m-auto pb-36">
           <img src="../../public/decoration-2.png" class="w-full mb-4" />
           <h1
-            class="text-center text-3xl mb-4 font-honey"
+            class="text-center text-3xl mb-4"
             data-aos="zoom-in-down"
             data-aos-duration="1500"
             data-aos-once="true"
@@ -146,8 +158,8 @@
           <div class="columns-2 flex">
             <div class="w-1/3 h-full relative">
               <img
-                src="../assets/images/tutihasanah.png"
-                class="w-full h-full"
+                src="../assets/images/tuti_hasanah.jpg"
+                class="w-full h-full rounded-xl ml-3 shadow-2xl shadow-emerald-900"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
                 data-aos-once="true"
@@ -157,7 +169,7 @@
 
             <div class="m-auto w-2/3">
               <h2
-                class="text-center text-3xl px-2 font-hurricane w-full"
+                class="text-center text-2xl px-2 w-full"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
                 data-aos-once="true"
@@ -171,9 +183,9 @@
                 data-aos-duration="1500"
                 data-aos-once="true"
               >
-                <b>Putri</b> dari Bapak <br />
-                <b>Tuti</b> <br />
-                & Ibu <b>Tuti</b>
+                <b>Putri Kedua</b> dari Bapak <br />
+                <b>Adek Suherman</b> <br />
+                & Ibu <b>Ita Maya Sari</b>
               </p>
             </div>
           </div>
@@ -192,7 +204,7 @@
         <div class="min-h-1/2 w-full m-auto pb-36">
           <img src="../../public/decoration-2.png" class="w-full mb-4" />
           <h1
-            class="text-center text-3xl mb-4 font-honey"
+            class="text-center text-3xl mb-4"
             data-aos="zoom-in-down"
             data-aos-duration="1500"
             data-aos-once="true"
@@ -203,7 +215,7 @@
           <div class="columns-2 flex">
             <div class="m-auto w-2/3">
               <h2
-                class="text-center text-2xl px-2 font-hurricane"
+                class="text-center text-2xl px-2"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
                 data-aos-once="true"
@@ -217,18 +229,18 @@
                 data-aos-duration="1500"
                 data-aos-once="true"
               >
-                <b>Putra</b> dari Bapak
-                <b> <br />Soni</b>
+                <b>Putra Keempat</b> dari Bapak
+                <b> <br />Sugito (Alm. )</b>
                 <br />
                 & Ibu
-                <b>Soni</b>
+                <b>Martini</b>
               </p>
             </div>
 
-            <div class="w-1/3 h-full relative">
+            <div class="w-1/3 h-full relative mr-3">
               <img
-                src="../assets/images/soniputrawan.png"
-                class="w-full h-full"
+                src="../assets/images/soni_putrawan.jpg"
+                class="w-full h-full rounded-xl shadow-2xl shadow-emerald-900"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
                 data-aos-once="true"
@@ -266,7 +278,7 @@
               data-aos-duration="1500"
               data-aos-once="true"
             >
-              <h1 class="text-4xl font-honey mt-2">Soni & Tuti</h1>
+              <h1 class="text-4xl mt-2">Soni & Tuti</h1>
             </div>
             <p
               class="text-center mb-4 px-4"
@@ -277,7 +289,7 @@
               akan melaksanakan
             </p>
             <div
-              class="w-[80%] bg-[url(./image1.png)] bg-[#cfc3bd] h-[170px] bg-blend-multiply bg-top bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
+              class="w-[80%] bg-[url(./image1.png)] bg-[#cfc3bd] h-[250px] bg-blend-multiply bg-top bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
               data-aos="zoom-in-down"
               data-aos-duration="1500"
               data-aos-once="true"
@@ -287,11 +299,11 @@
                 <i class="fas fa-calendar"></i> Rabu, 18 Mei 2022
               </p>
               <p class="text-center text-sm">
-                <i class="fas fa-clock"></i> 08:00 - 10:00 WIB
+                <i class="fas fa-clock"></i> 08:00 - Selesai WIB
               </p>
             </div>
             <div
-              class="w-[80%] bg-[url(./image2.png)] bg-[#dfd1c4] h-[170px] bg-blend-multiply bg-top bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
+              class="w-[80%] bg-[url(./tuti_soni3.jpg)] bg-[#dfd1c4] h-[250px] bg-blend-multiply bg-top bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
               data-aos="zoom-in-down"
               data-aos-duration="1500"
               data-aos-once="true"
@@ -368,7 +380,7 @@
         <div class="min-h-1/2 w-4/5 m-auto pb-36">
           <img src="../../public/decoration-2.png" class="w-full mb-4" />
           <h1
-            class="text-center text-3xl mb-4 font-honey"
+            class="text-center text-3xl mb-4"
             data-aos="zoom-in-up"
             data-aos-duration="1500"
             data-aos-once="true"
@@ -405,7 +417,8 @@
             data-aos-duration="1500"
             data-aos-once="true"
           >
-            Disini Keterangan Lokasi
+            Desa ciptodadi kec. Sukakarya
+            Musirawas Lubuklinggau
           </p>
           <div
             class="w-full flex"
@@ -415,7 +428,7 @@
           >
             <a
               target="_blank"
-              href="https://goo.gl/maps/qPzhNa3gJezPRKw29"
+              href="https://goo.gl/maps/mGy6Mw3WAEkSmdtj9"
               class="animate-bounce px-2 py-2 max-w-xl bg-[#958277] text-white rounded-lg mt-8 hover:opacity-80 focus:outline-none active:outline-none text-base text-center inline-block mx-auto"
             >
               Lihat Lokasi
@@ -432,7 +445,7 @@
         <div class="min-h-1/2 px-6 m-auto pb-36">
           <img src="../../public/decoration-2.png" class="w-full mb-4" />
           <h1
-            class="text-center text-3xl mb-4 font-honey"
+            class="text-center text-3xl mb-4"
             data-aos="zoom-in-up"
             data-aos-duration="1500"
             data-aos-once="true"
@@ -551,12 +564,12 @@
 
           <div class="mt-8">
             <h1
-              class="text-center text-3xl mb-4 font-honey"
+              class="text-center text-4xl mb-4 font-akaya"
               data-aos="zoom-in-up"
               data-aos-duration="1500"
               data-aos-once="true"
             >
-              Dompet Digital
+              Amplop Digital
             </h1>
 
             <div
@@ -566,12 +579,40 @@
               data-aos-once="true"
             >
               <img
-                src="../assets/images/logo-mandiri.png"
-                class="w-28 mx-auto mb-8"
+                src="../assets/images/logo-bca.png"
+                class="w-28 mx-auto mb-6"
                 alt=""
               />
-              <p class="text-center font-bold">113-00-1170212-7</p>
+              <p class="text-center font-bold">8525320142</p>
               <p class="text-center text-xl">a/n Tuti Hasanah</p>
+              <button
+              @click="onClickCopyNorek('bca')"
+              class=" min-w-[75px] px-4 py-2 bg-[#958277] text-white rounded-2xl hover:opacity-80 focus:outline-none active:outline-none text-base block mx-auto my-2"
+            >
+             <i class="far fa-copy text-white"></i> Copy Text
+            </button>
+
+            </div>
+
+            <div
+              class="mt-4 p-4 bg-[url('./pattern.jpg')] bg-contain rounded-lg shadow-lg shadow-slate-400"
+              data-aos="zoom-in-down"
+              data-aos-duration="1500"
+              data-aos-once="true"
+            >
+              <img
+                src="../assets/images/logo-bri-preview.png"
+                class="w-40 mx-auto mb-6"
+                alt=""
+              />
+              <p class="text-center font-bold">5759-01-009500-53-4</p>
+              <p class="text-center text-xl">a/n Soni Putrawan</p>
+                <button
+              @click="onClickCopyNorek('bri')"
+              class=" min-w-[75px] px-4 py-2 bg-[#958277] text-white rounded-2xl hover:opacity-80 focus:outline-none active:outline-none text-base block mx-auto my-2"
+            >
+             <i class="far fa-copy text-white"></i> Copy Text
+            </button>
             </div>
             <img
               src="../../public/decoration-2.png"
@@ -598,7 +639,7 @@ export default {
   components: {
     Modal,
     Countdown,
-    Menu,
+    Menu
   },
   data() {
     return {
@@ -621,7 +662,7 @@ export default {
       // ? Data for Input
       nama: null,
       konfirmasi: null,
-      ucap: null,
+      ucap: null
     };
   },
   methods: {
@@ -658,7 +699,7 @@ export default {
       }
     },
     async kirimUcapan() {
-      const API_URL = "https://fueremi-hasura.herokuapp.com/v1/graphql";
+      const API_URL = "https://satria-budi.herokuapp.com/v1/graphql";
       const API_HEADERS = {
         "Content-Type": "application/json",
         "x-hasura-admin-secret": "18032405",
@@ -666,7 +707,7 @@ export default {
 
       const API_QUERY = `
       mutation MyMutation {
-        insert_tiara_atar_wedding_ucapan(objects: {konfirmasi: "${this.konfirmasi}", nama: "${this.nama}", ucapan: "${this.ucap}"}) {
+        insert_soni_tuti_wedding_ucapan(objects: {konfirmasi: "${this.konfirmasi}", nama: "${this.nama}", ucapan: "${this.ucap}"}) {
           affected_rows
         }
       }
@@ -677,7 +718,7 @@ export default {
           { query: API_QUERY },
           { headers: API_HEADERS }
         );
-        return data.data.data.insert_tiara_atar_wedding_ucapan.affected_rows;
+        return data.data.data.insert_soni_tuti_wedding_ucapan.affected_rows;
       } catch (error) {
         Swal.fire({
           icon: "error",
@@ -694,7 +735,7 @@ export default {
       this.loading = false;
     },
     async ucapanLength() {
-      const API_URL = "https://fueremi-hasura.herokuapp.com/v1/graphql";
+      const API_URL = "https://satria-budi.herokuapp.com/v1/graphql";
       const API_HEADERS = {
         "Content-Type": "application/json",
         "x-hasura-admin-secret": "18032405",
@@ -702,7 +743,7 @@ export default {
 
       const API_QUERY = `
       query MyQuery {
-        tiara_atar_wedding_ucapan_aggregate {
+        soni_tuti_wedding_ucapan_aggregate {
           aggregate {
             count
           }
@@ -715,7 +756,7 @@ export default {
           { query: API_QUERY },
           { headers: API_HEADERS }
         );
-        return data.data.data.tiara_atar_wedding_ucapan_aggregate.aggregate
+        return data.data.data.soni_tuti_wedding_ucapan_aggregate.aggregate
           .count;
       } catch (error) {
         Swal.fire({
@@ -727,7 +768,7 @@ export default {
       }
     },
     async loadUcapan() {
-      const API_URL = "https://fueremi-hasura.herokuapp.com/v1/graphql";
+      const API_URL = "https://satria-budi.herokuapp.com/v1/graphql";
       const API_HEADERS = {
         "Content-Type": "application/json",
         "x-hasura-admin-secret": "18032405",
@@ -735,7 +776,7 @@ export default {
 
       const API_QUERY = `
       query MyQuery {
-        tiara_atar_wedding_ucapan(offset: ${this.offset}, limit: ${this.limit}, order_by: {created_at: desc}) {
+        soni_tuti_wedding_ucapan(offset: ${this.offset}, limit: ${this.limit}, order_by: {created_at: desc}) {
           ucapan
           nama
           konfirmasi
@@ -750,7 +791,7 @@ export default {
           { query: API_QUERY },
           { headers: API_HEADERS }
         );
-        return data.data.data.tiara_atar_wedding_ucapan;
+        return data.data.data.soni_tuti_wedding_ucapan;
       } catch (error) {
         Swal.fire({
           icon: "error",
@@ -759,6 +800,28 @@ export default {
         });
         return;
       }
+    },
+    onClickCopyNorek(flag) {
+      let noRek = ''
+      if (flag === 'bca') {
+        noRek = '8525320142'
+      }
+      else {
+        noRek = '575901009500534'
+      }
+
+      const mySmartTextarea = document.createElement("textarea");
+      mySmartTextarea.innerHTML = noRek;
+      document.body.appendChild(mySmartTextarea);
+
+      mySmartTextarea.select();
+      document.execCommand("copy");
+      Swal.fire({
+        icon: "success",
+        title: "Yeay...",
+        html: `Nomor Rekening berhasil di copy ke clipboard`,
+      });
+      mySmartTextarea.remove();
     },
   },
   computed: {

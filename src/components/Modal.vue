@@ -16,8 +16,8 @@
         <div
           class="bg-white w-full rounded-lg shadow-2xl flex flex-col py-4 px-6"
         >
-          <div class="text-3xl mb-6 text-center font-honey tracking-[2px]">
-            Protokol Kesehatan <sup class="text-lg">Covid-19</sup>
+          <div class="text-3xl mb-6 text-center font-akaya tracking-[2px]">
+            Protokol Kesehatan Covid-19
           </div>
           <span class="leading-5 text-sm text-center mb-6">
             Demi mendukung kesehatan bersama alangkah baiknya para tamu yang
