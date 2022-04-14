@@ -5,7 +5,7 @@
       :class="[show ? '-translate-y-full' : '']"
     >
       <audio id="audio" loop>
-        <source src="../assets/audios/backsound.mp3" type="audio/mpeg" />
+        <source src="../assets/audios/backsoundAThousandYears.mp3" type="audio/mpeg" />
       </audio>
       <div class="min-h-1/2 w-4/5 m-auto">
         <img src="../../public/decoration-2.png" class="w-full" />
@@ -289,7 +289,7 @@
               akan melaksanakan
             </p>
             <div
-              class="w-[80%] bg-[url(./image1.png)] bg-[#cfc3bd] h-[250px] bg-blend-multiply bg-top bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
+              class="w-[80%] bg-[url(./image1.png)] bg-[#cfc3bd] h-[250px] bg-blend-multiply bg-[center_top_-2rem] bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
               data-aos="zoom-in-down"
               data-aos-duration="1500"
               data-aos-once="true"
@@ -377,67 +377,91 @@
       </div>
 
       <div class="min-h-screen w-full flex bg-[#000000] font-akaya" id="lokasi">
-        <div class="min-h-1/2 w-4/5 m-auto pb-36">
-          <img src="../../public/decoration-2.png" class="w-full mb-4" />
-          <h1
+          <div class="min-h-1/2 m-auto pb-36">
+            <img src="../../public/decoration-2.png" class="w-full mb-4" />
+               <!-- <h1
             class="text-center text-3xl mb-4"
             data-aos="zoom-in-up"
             data-aos-duration="1500"
             data-aos-once="true"
           >
             Akad Nikah & Resepsi
-          </h1>
-          <img
+          </h1> -->
+          <!-- <img
             src="../assets/images/gedung.png"
             data-aos="zoom-in-down"
             data-aos-duration="1500"
             data-aos-once="true"
             class="w-3/5 mx-auto"
             alt=""
-          />
-          <h2
-            class="text-center text-lg mt-4"
-            data-aos="zoom-in-up"
-            data-aos-duration="1500"
-            data-aos-once="true"
-          >
-            Tempat Lokasi
-          </h2>
-          <h3
-            class="text-center text-base mt-2"
-            data-aos="zoom-in-down"
-            data-aos-duration="1500"
-            data-aos-once="true"
-          >
-            Rabu, 18 <sup>th</sup> Mei 2022
-          </h3>
-          <p
-            class="text-center text-xs mt-2"
-            data-aos="zoom-in-up"
-            data-aos-duration="1500"
-            data-aos-once="true"
-          >
-            Desa ciptodadi kec. Sukakarya
-            Musirawas Lubuklinggau
-          </p>
+          /> -->
           <div
-            class="w-full flex"
-            data-aos="zoom-in-down"
-            data-aos-duration="1500"
-            data-aos-once="true"
-          >
-            <a
-              target="_blank"
-              href="https://goo.gl/maps/mGy6Mw3WAEkSmdtj9"
-              class="animate-bounce px-2 py-2 max-w-xl bg-[#958277] text-white rounded-lg mt-8 hover:opacity-80 focus:outline-none active:outline-none text-base text-center inline-block mx-auto"
+              class="w-[95%] m-auto rounded-xl border-[1px] border-[#CED4D9] bg-white"
+              data-aos="zoom-in-down"
+              data-aos-duration="1500"
+              data-aos-once="true"
             >
-              Lihat Lokasi
-            </a>
+            <div class="w-[97%] m-auto">
+            <GoogleMap
+            api-key="AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg"
+            style="width: 100%; height: 370px"
+            :center="center"
+            :zoom="17"
+            >
+              <Marker :options="{ 
+                position: center,
+                icon: {
+                  url: 'https://cdn-icons.flaticon.com/png/512/769/premium/769633.png?token=exp=1649911868~hmac=11a35149b0d819dbc1193d3bd1fbef93',
+                  scaledSize: { height: 43, width: 40 },
+                 }
+                }" />
+            </GoogleMap>
+            </div>
+
           </div>
-          <img
-            src="../../public/decoration-2.png"
-            class="w-full mt-4 rotate-180"
-          />
+            <h2
+              class="text-center text-lg mt-4"
+              data-aos="zoom-in-up"
+              data-aos-duration="1500"
+              data-aos-once="true"
+            >
+              Tempat Lokasi
+            </h2>
+            <h3
+              class="text-center text-base mt-2"
+              data-aos="zoom-in-down"
+              data-aos-duration="1500"
+              data-aos-once="true"
+            >
+              Rabu, 18 <sup>th</sup> Mei 2022
+            </h3>
+            <p
+              class="text-center text-xs mt-2"
+              data-aos="zoom-in-up"
+              data-aos-duration="1500"
+              data-aos-once="true"
+            >
+              Desa ciptodadi kec. Sukakarya
+              Musirawas Lubuklinggau
+            </p>
+            <div
+              class="w-full flex"
+              data-aos="zoom-in-down"
+              data-aos-duration="1500"
+              data-aos-once="true"
+            >
+              <a
+                target="_blank"
+                href="https://goo.gl/maps/mGy6Mw3WAEkSmdtj9"
+                class="animate-bounce px-2 py-2 max-w-xl bg-[#958277] text-white rounded-lg mt-8 hover:opacity-80 focus:outline-none active:outline-none text-base text-center inline-block mx-auto"
+              >
+                Lihat Lokasi
+              </a>
+            </div>
+            <img
+              src="../../public/decoration-2.png"
+              class="w-full mt-4 rotate-180"
+            />
         </div>
       </div>
 
@@ -733,13 +757,16 @@ import Swal from "sweetalert2";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Countdown from "@chenfengyuan/vue-countdown";
+import { GoogleMap, Marker } from 'vue3-google-map'
 
 export default {
   name: "Home",
   components: {
     Modal,
     Countdown,
-    Menu
+    Menu,
+    GoogleMap,
+    Marker
   },
   data() {
     return {
@@ -762,7 +789,8 @@ export default {
       // ? Data for Input
       nama: null,
       konfirmasi: null,
-      ucap: null
+      ucap: null,
+      center: { lat: -3.231483, lng: 103.2052618 }
     };
   },
   methods: {
