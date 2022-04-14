@@ -1,20 +1,20 @@
 <template>
   <div class="h-screen w-screen flex justify-center">
     <div
-      class="h-full w-full md:w-1/3 md:mx-auto bg-[#000000] py-8 text-[#958277] font-[300] font-akaya flex relative z-20 transition-transform ease-in-out delay-500"
+      class="h-full w-full md:w-1/3 md:mx-auto bg-[url(./foto_1.jpg)] relative bg-contain bg-auto bg-cover bg-center py-8 text-[#958277] font-[300] font-akaya flex relative z-20 transition-transform ease-in-out delay-500"
       :class="[show ? '-translate-y-full' : '']"
     >
       <audio id="audio" loop>
         <source src="../assets/audios/backsoundAThousandYears.mp3" type="audio/mpeg" />
       </audio>
       <div class="min-h-1/2 w-4/5 m-auto">
-        <img src="../../public/decoration-2.png" class="w-full" />
+        <!-- <img src="../../public/decoration-2.png" class="w-full" /> -->
         <!-- <h2
           class="uppercase text-center tracking-[1px] mt-6 text-[calc(20px*0.75)] animate-[fade-in-top_1s_ease-in-out_0.8s_both]"
         >
           Pernikahan dari
         </h2> -->
-        <div class="w-2/5 h-full m-auto mt-3">
+        <!-- <div class="w-2/5 h-full m-auto mt-3">
          <img
                 src="../assets/images/soni_tuti2.jpg"
                 class="w-full h-full rounded-xl shadow-2xl shadow-emerald-900"
@@ -23,41 +23,42 @@
                 data-aos-once="true"
                 alt=""
               />
-        </div>
-
-        <h1
-          class="text-center text-[calc(50px*0.75)] leading-[1] tracking-[2px] mt-4 pt-4 animate-[scale-in-bottom_1s_ease-in-out_1.1s_both]"
-        >
-          Soni & Tuti
-        </h1>
-        <!-- <h2
-          class="uppercase text-center tracking-[1px] my-2 text-[calc(20px*0.75)] animate-[fade-in-bottom_1s_ease-in-out_1.5s_both]"
-        >
-          Rabu, 18 Mei 2022
-        </h2> -->
-
-        <h2
-          class="uppercase text-center tracking-[1px] mt-8 text-[calc(14px*0.75)] animate-[fade-in-top_1s_ease-in-out_1.8s_both]"
-        >
-          Yang terhormat
-        </h2>
-        <h1
-          class="text-center text-[#f8f8f8] font-akaya text-[calc(36px*0.75)] leading-[1] tracking-[2px] pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_2.1s_both] capitalize"
-        >
-          {{ undangan.replace(/\;/g, " ").replace(/\=/g, "&") }}
-        </h1>
-        <p
-          class="text-center text-[calc(15px*0.75)] animate-[fade-in-bottom_1s_ease-in-out_2.4s_both] px-4"
-        >
-          Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami
-        </p>
-        <div class="animate-[fade-in-top_1s_ease-in-out_2.5s_both]">
-          <button
-            @click="clickOpen"
-            class="animate-bounce px-2 py-2 bg-[#958277] text-white rounded-lg mt-8 hover:opacity-80 focus:outline-none active:outline-none text-base block mx-auto"
+        </div> -->
+        <div class="fixed bottom-10 left-0 right-0">
+          <h1
+            class="text-center text-[#f8f8f8] text-[calc(50px*0.75)] leading-[1] tracking-[2px] mt-4 pt-4 animate-[scale-in-bottom_1s_ease-in-out_1.1s_both]"
           >
-            <i class="fas fa-heart text-red-500 shadow"></i> Buka Undangan
-          </button>
+            Soni & Tuti
+          </h1>
+          <!-- <h2
+            class="uppercase text-center tracking-[1px] my-2 text-[calc(20px*0.75)] animate-[fade-in-bottom_1s_ease-in-out_1.5s_both]"
+          >
+            Rabu, 18 Mei 2022
+          </h2> -->
+
+          <h2
+            class="uppercase text-[#f8f8f8] text-center tracking-[1px] mt-8 text-[calc(14px*0.75)] animate-[fade-in-top_1s_ease-in-out_1.8s_both]"
+          >
+            Yang terhormat
+          </h2>
+          <h1
+            class="text-center text-[#f8f8f8] font-akaya text-[calc(36px*0.75)] leading-[1] tracking-[2px] pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_2.1s_both] capitalize"
+          >
+            {{ undangan.replace(/\;/g, " ").replace(/\=/g, "&") }}
+          </h1>
+          <p
+            class=" text-[#f8f8f8] text-center text-[calc(15px*0.75)] animate-[fade-in-bottom_1s_ease-in-out_2.4s_both] px-4"
+          >
+            Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami
+          </p>
+          <div class="animate-[fade-in-top_1s_ease-in-out_2.5s_both]">
+            <button
+              @click="clickOpen"
+              class="animate-bounce px-2 py-2 bg-[#958277] text-white rounded-lg mt-8 hover:opacity-80 focus:outline-none active:outline-none text-base block mx-auto"
+            >
+              <i class="fas fa-heart text-red-500 shadow"></i> Buka Undangan
+            </button>
+          </div>
         </div>
         <!-- <img
           src="../../public/decoration-2.png"
@@ -402,8 +403,19 @@
               data-aos-once="true"
             >
             <div class="w-[97%] m-auto">
-            <GoogleMap
-            api-key="AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg"
+             <iframe 
+              width="100%" 
+              height="350" 
+              frameborder="0" 
+              scrolling="no" 
+              marginheight="0" 
+              marginwidth="0" 
+              src="https://maps.google.com/maps?q=-3.231483%2C%20103.2052618&t=m&z=16&output=embed&iwloc=near">
+          </iframe>
+          
+          
+            <!-- <GoogleMap
+            api-key="AIzaSyAOEwijcOqYLlzcwx98L7E0DoCw0Ng4ME8"
             style="width: 100%; height: 370px"
             :center="center"
             :zoom="17"
@@ -415,7 +427,7 @@
                   scaledSize: { height: 43, width: 40 },
                  }
                 }" />
-            </GoogleMap>
+            </GoogleMap> -->
             </div>
 
           </div>
@@ -757,7 +769,7 @@ import Swal from "sweetalert2";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Countdown from "@chenfengyuan/vue-countdown";
-import { GoogleMap, Marker } from 'vue3-google-map'
+// import { GoogleMap, Marker } from 'vue3-google-map'
 
 export default {
   name: "Home",
@@ -765,8 +777,8 @@ export default {
     Modal,
     Countdown,
     Menu,
-    GoogleMap,
-    Marker
+    // GoogleMap,
+    // Marker
   },
   data() {
     return {
@@ -790,7 +802,8 @@ export default {
       nama: null,
       konfirmasi: null,
       ucap: null,
-      center: { lat: -3.231483, lng: 103.2052618 }
+      // locationMap: 'https://maps.google.com/maps?q=-3.231483%2C%20103.2052618&t=m&z=16&output=embed&iwloc=near'
+      // center: { lat: -3.231483, lng: 103.2052618 }
     };
   },
   methods: {
