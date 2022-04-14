@@ -725,7 +725,7 @@
               @click="onClickCopyNorek('bca')"
               class=" min-w-[75px] px-4 py-2 bg-[#958277] text-white rounded-2xl hover:opacity-80 focus:outline-none active:outline-none text-base block mx-auto my-2"
             >
-             <i class="far fa-copy text-white"></i> {{btnBCA ? 'berhasil di copy' : 'Copy Text'}}
+             <i class="far fa-copy text-white"></i> {{btnBCA ? 'Berhasil di copy' : 'Copy Text'}}
             </button>
 
             </div>
@@ -747,7 +747,7 @@
               @click="onClickCopyNorek('bri')"
               class=" min-w-[75px] px-4 py-2 bg-[#958277] text-white rounded-2xl hover:opacity-80 focus:outline-none active:outline-none text-base block mx-auto my-2"
             >
-             <i class="far fa-copy text-white"></i> {{btnBRI ? 'berhasil di copy' : 'Copy Text'}}
+             <i class="far fa-copy text-white"></i> {{btnBRI ? 'Berhasil di copy' : 'Copy Text'}}
             </button>
             </div>
             <img
