@@ -725,7 +725,7 @@
               @click="onClickCopyNorek('bca')"
               class=" min-w-[75px] px-4 py-2 bg-[#958277] text-white rounded-2xl hover:opacity-80 focus:outline-none active:outline-none text-base block mx-auto my-2"
             >
-             <i class="far fa-copy text-white"></i> Copy Text
+             <i class="far fa-copy text-white"></i> {{btnBCA ? 'berhasil di copy' : 'Copy Text'}}
             </button>
 
             </div>
@@ -747,7 +747,7 @@
               @click="onClickCopyNorek('bri')"
               class=" min-w-[75px] px-4 py-2 bg-[#958277] text-white rounded-2xl hover:opacity-80 focus:outline-none active:outline-none text-base block mx-auto my-2"
             >
-             <i class="far fa-copy text-white"></i> Copy Text
+             <i class="far fa-copy text-white"></i> {{btnBRI ? 'berhasil di copy' : 'Copy Text'}}
             </button>
             </div>
             <img
@@ -802,6 +802,8 @@ export default {
       nama: null,
       konfirmasi: null,
       ucap: null,
+      btnBCA: false,
+      btnBRI: false
       // locationMap: 'https://maps.google.com/maps?q=-3.231483%2C%20103.2052618&t=m&z=16&output=embed&iwloc=near'
       // center: { lat: -3.231483, lng: 103.2052618 }
     };
@@ -946,9 +948,11 @@ export default {
       let noRek = ''
       if (flag === 'bca') {
         noRek = '8525320142'
+        this.btnBCA = true
       }
       else {
         noRek = '575901009500534'
+        this.btnBRI = true
       }
 
       const mySmartTextarea = document.createElement("textarea");
@@ -957,12 +961,11 @@ export default {
 
       mySmartTextarea.select();
       document.execCommand("copy");
-      Swal.fire({
-        icon: "success",
-        title: "Yeay...",
-        html: `Nomor Rekening berhasil di copy ke clipboard`,
-      });
       mySmartTextarea.remove();
+      setTimeout(() => {
+        this.btnBRI = false
+        this.btnBCA = false
+      }, 1500);
     },
   },
   computed: {
