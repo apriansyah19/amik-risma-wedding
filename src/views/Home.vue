@@ -101,7 +101,7 @@
     </div> -->
 
       <div
-        class="min-h-screen w-full md:mx-auto flex bg-[#000000] font-akaya"
+        class="min-h-screen w-full md:mx-auto flex bg-[#000000] font-akaya snow-bg"
         id="kata-pengantar"
       >
 
@@ -142,7 +142,7 @@
       </div>
 
       <div
-        class="min-h-screen w-full mx-auto flex bg-[#000000] font-akaya"
+        class="min-h-screen w-full mx-auto flex bg-[#000000] font-akaya snow-bg"
         id="mempelai-wanita"
       >
         <div class="min-h-1/2 w-full m-auto pb-36">
@@ -199,7 +199,7 @@
       </div>
 
       <div
-        class="min-h-screen w-full flex bg-[#000000] font-akaya"
+        class="min-h-screen w-full flex bg-[#000000] font-akaya snow-bg"
         id="mempelai-pria"
       >
         <div class="min-h-1/2 w-full m-auto pb-36">
@@ -257,7 +257,7 @@
         </div>
       </div>
 
-      <div class="min-h-screen w-full flex bg-[#000000] font-akaya" id="dday">
+      <div class="min-h-screen w-full flex bg-[#000000] font-akaya snow-bg" id="dday">
         <div class="min-h-1/2 w-full m-auto pb-36">
           <img src="../../public/decoration-2.png" class="w-full mb-4" />
 
@@ -377,7 +377,7 @@
         </div>
       </div>
 
-      <div class="min-h-screen w-full flex bg-[#000000] font-akaya" id="lokasi">
+      <div class="min-h-screen w-full flex bg-[#000000] font-akaya snow-bg" id="lokasi">
           <div class="min-h-1/2 m-auto pb-36">
             <img src="../../public/decoration-2.png" class="w-full mb-4" />
                <!-- <h1
@@ -478,7 +478,7 @@
       </div>
 
       <div
-        class="min-h-screen w-full flex bg-[#000000] font-akaya"
+        class="min-h-screen w-full flex bg-[#000000] font-akaya snow-bg"
         id="galeri-foto"
       >
         <div class="min-h-1/2 w-full m-auto pb-36">
@@ -577,7 +577,7 @@
         </div>
       </div>
 
-      <div class="min-h-screen w-full flex bg-[#000000] font-akaya" id="ucapan">
+      <div class="min-h-screen w-full flex bg-[#000000] font-akaya snow-bg" id="ucapan">
         <div class="min-h-1/2 px-6 m-auto pb-36">
           <img src="../../public/decoration-2.png" class="w-full mb-4" />
           <h1
@@ -1083,4 +1083,39 @@ export default {
     opacity: 1;
   }
 }
+
+.snow-bg {
+    position: relative;
+}
+.snow-bg:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    background-image: 
+    url(https://library.elementor.com/resources/christmas-snow-effect/s1.png), 
+    url(https://library.elementor.com/resources/christmas-snow-effect/s2.png), 
+    url(https://library.elementor.com/resources/christmas-snow-effect/s3.png);
+    animation: snow 30s linear infinite;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: snow;
+}
+@keyframes snow {
+  /* 0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;} */
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}/* End custom CSS */
 </style>
+
+
