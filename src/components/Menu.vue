@@ -11,8 +11,8 @@
         id="btn-kata-pengantar"
       >
         <img
-          src="@/assets/images/menu-1.png"
-          class="h-[40px] w-[40px]"
+          src="@/assets/images/rings.png"
+          class="h-[36px] w-[36px]"
           alt=""
         />
       </a>
@@ -23,8 +23,8 @@
         id="btn-mempelai-wanita"
       >
         <img
-          src="@/assets/images/menu-2.png"
-          class="h-[40px] w-[40px]"
+          src="@/assets/images/bride.png"
+          class="h-[36px] w-[36px]"
           alt=""
         />
       </a>
@@ -35,8 +35,8 @@
         id="btn-mempelai-pria"
       >
         <img
-          src="@/assets/images/menu-2.png"
-          class="h-[40px] w-[40px]"
+          src="@/assets/images/groom.png"
+          class="h-[36px] w-[36px]"
           alt=""
         />
       </a>
@@ -47,8 +47,8 @@
         id="btn-dday"
       >
         <img
-          src="@/assets/images/menu-3.png"
-          class="h-[40px] w-[40px]"
+          src="@/assets/images/calendar.png"
+          class="h-[36px] w-[36px]"
           alt=""
         />
       </a>
@@ -59,15 +59,15 @@
         id="btn-lokasi"
       >
         <img
-          src="@/assets/images/menu-5.png"
-          class="h-[40px] w-[40px]"
+          src="@/assets/images/wedding-location.png"
+          class="h-[36px] w-[36px]"
           alt=""
         />
       </a>
       <a class="my-2 p-1 rounded-ful" href="#ucapan" v-smooth-scroll>
         <img
-          src="@/assets/images/menu-4.png"
-          class="h-[40px] w-[40px]"
+          src="@/assets/images/invitation.png"
+          class="h-[36px] w-[36px]"
           alt=""
         />
       </a>

@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen w-screen flex justify-center">
     <div
-      class="h-full w-full md:w-1/3 md:mx-auto bg-[url(./foto_1.jpg)] relative bg-contain bg-auto bg-cover bg-center py-8 text-[#958277] font-[300] font-akaya flex relative z-20 transition-transform ease-in-out delay-500"
+      class="h-full w-full md:w-1/3 md:mx-auto bg-[url(./bg_sontut2.jpg)] relative bg-contain bg-auto bg-cover bg-center py-8 text-[#958277] font-[300] font-akaya flex relative z-20 transition-transform ease-in-out delay-500"
       :class="[show ? '-translate-y-full' : '']"
     >
       <audio id="audio" loop>
