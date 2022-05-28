@@ -291,7 +291,7 @@
               akan melaksanakan
             </p>
             <div
-              class="w-[80%] bg-[url(./prewedAJIL5.jpg)] bg-[#cfc3bd] h-[290px] bg-blend-multiply bg-[center_top_-10rem] bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
+              class="w-[80%] bg-[url(./prewedAJIL5.jpg)] bg-[#cfc3bd] h-[290px] bg-blend-multiply bg-[center_top_-10rem] bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-[#68554F] shadow-lg"
               data-aos="zoom-in-down"
               data-aos-duration="1500"
               data-aos-once="true"
@@ -357,7 +357,7 @@
               <!-- <div v></div> -->
             </div>
             <div
-              class="w-[80%] bg-[url(./resepsiFoto.jpg)] h-[290px] bg-blend-multiply bg-[center_top_-5rem] bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
+              class="w-[80%] bg-[url(./resepsiFoto.jpg)] h-[290px] bg-blend-multiply bg-[center_top_-5rem] bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-[#68554F] shadow-lg"
               data-aos="zoom-in-down"
               data-aos-duration="1500"
               data-aos-once="true"
@@ -552,7 +552,7 @@
             <div class="w-1/3 h-full relative ml-3">
               <img
                 src="../assets/images/prewedAJIL1.jpg"
-                class="w-full h-full rounded-xl shadow-2xl shadow-emerald-900"
+                class="w-full h-full rounded-xl shadow-2xl shadow-[#68554F]"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
                 data-aos-once="true"
@@ -563,7 +563,7 @@
             <div class="w-1/3 h-full relative mx-2">
               <img
                 src="../assets/images/prewedAJIL2.jpg"
-                class="w-full h-full rounded-xl shadow-2xl shadow-emerald-900"
+                class="w-full h-full rounded-xl shadow-2xl shadow-[#68554F]"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
                 data-aos-once="true"
@@ -574,7 +574,7 @@
             <div class="w-1/3 h-full relative mr-3">
               <img
                 src="../assets/images/prewedAJIL3.jpg"
-                class="w-full h-full rounded-xl shadow-2xl shadow-emerald-900"
+                class="w-full h-full rounded-xl shadow-2xl shadow-[#68554F]"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
                 data-aos-once="true"
