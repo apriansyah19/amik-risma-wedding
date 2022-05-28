@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen w-screen flex justify-center">
     <div
-      class="h-full w-full md:w-1/3 md:mx-auto bg-[url(./bg_sontut2.jpg)] relative bg-contain bg-auto bg-cover bg-center py-8 text-[#958277] font-[300] font-akaya flex relative z-20 transition-transform ease-in-out delay-500"
+      class="h-full w-full md:w-1/3 md:mx-auto bg-[url(./prewedAJIL.jpg)] relative bg-contain bg-auto bg-cover bg-center py-8 text-[#958277] font-[300] font-akaya flex relative z-20 transition-transform ease-in-out delay-500"
       :class="[show ? '-translate-y-full' : '']"
     >
       <audio id="audio" loop>
@@ -28,7 +28,7 @@
           <h1
             class="text-center text-[#f8f8f8] text-[calc(50px*0.75)] leading-[1] tracking-[2px] mt-4 pt-4 animate-[scale-in-bottom_1s_ease-in-out_1.1s_both]"
           >
-            Soni & Tuti
+            Aji (amik) & Risma
           </h1>
           <!-- <h2
             class="uppercase text-center tracking-[1px] my-2 text-[calc(20px*0.75)] animate-[fade-in-bottom_1s_ease-in-out_1.5s_both]"
@@ -56,7 +56,7 @@
               @click="clickOpen"
               class="animate-bounce px-2 py-2 bg-[#958277] text-white rounded-lg mt-8 hover:opacity-80 focus:outline-none active:outline-none text-base block mx-auto"
             >
-              <i class="fas fa-heart text-red-500 shadow"></i> Buka Undangan
+              <i class="fas fa-heart text-red-500"></i> Buka Undangan
             </button>
           </div>
         </div>
@@ -101,7 +101,7 @@
     </div> -->
 
       <div
-        class="min-h-screen w-full md:mx-auto flex bg-[#000000] font-akaya snow-bg"
+        class="min-h-screen w-full md:mx-auto flex bg-[#cfcabc] font-akaya snow-bg"
         id="kata-pengantar"
       >
 
@@ -112,7 +112,7 @@
             class="w-3/5 mx-auto mb-6"
             alt="bismillah"
           />
-          <h1 class="text-center text-3xl mb-8">
+          <h1 class="text-center text-3xl mb-8 font-honey">
             Assalamualaikum Wr. Wb.
           </h1>
           <p
@@ -142,13 +142,13 @@
       </div>
 
       <div
-        class="min-h-screen w-full mx-auto flex bg-[#000000] font-akaya snow-bg"
+        class="min-h-screen w-full mx-auto flex bg-[#cfcabc] font-akaya snow-bg"
         id="mempelai-wanita"
       >
         <div class="min-h-1/2 w-full m-auto pb-36">
           <img src="../../public/decoration-2.png" class="w-full mb-4" />
           <h1
-            class="text-center text-3xl mb-4"
+            class="text-center text-3xl mb-4 font-honey"
             data-aos="zoom-in-down"
             data-aos-duration="1500"
             data-aos-once="true"
@@ -159,8 +159,8 @@
           <div class="columns-2 flex">
             <div class="w-1/3 h-full relative">
               <img
-                src="../assets/images/tuti_hasanah.jpg"
-                class="w-full h-full rounded-xl ml-3 shadow-2xl shadow-emerald-900"
+                src="../assets/images/Foto-Risma-Sendiri.jpg"
+                class="w-full h-full rounded-xl ml-3 shadow-2xl shadow-[#68554F]"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
                 data-aos-once="true"
@@ -175,8 +175,8 @@
                 data-aos-duration="1500"
                 data-aos-once="true"
               >
-                 Tuti Hasanah,
-                <span class="text-xl">S.I.Kom.</span>
+                 Lismawati Kartika Sari
+                <!-- <span class="text-xl">S.I.Kom.</span> -->
               </h2>
               <p
                 class="text-center w-full text-sm mx-auto mt-4 leading-4 px-2"
@@ -184,9 +184,9 @@
                 data-aos-duration="1500"
                 data-aos-once="true"
               >
-                <b>Putri Kedua</b> dari Bapak <br />
-                <b>Adek Suherman</b> <br />
-                & Ibu <b>Ita Maya Sari</b>
+                <b>Putri Kedua</b> dari Kel. Bapak <br />
+                <b>Abdul Kadir</b> <br />
+                & Ibu <b>Idawati</b>
               </p>
             </div>
           </div>
@@ -199,13 +199,13 @@
       </div>
 
       <div
-        class="min-h-screen w-full flex bg-[#000000] font-akaya snow-bg"
+        class="min-h-screen w-full flex bg-[#cfcabc] font-akaya snow-bg"
         id="mempelai-pria"
       >
         <div class="min-h-1/2 w-full m-auto pb-36">
           <img src="../../public/decoration-2.png" class="w-full mb-4" />
           <h1
-            class="text-center text-3xl mb-4"
+            class="text-center text-3xl mb-4 font-honey"
             data-aos="zoom-in-down"
             data-aos-duration="1500"
             data-aos-once="true"
@@ -221,7 +221,8 @@
                 data-aos-duration="1500"
                 data-aos-once="true"
               >
-                Soni Putrawan, <span class="text-xl">A.Md.</span>
+                M Samiaji
+                <!-- , <span class="text-xl">A.Md.</span> -->
               </h2>
 
               <p
@@ -230,18 +231,18 @@
                 data-aos-duration="1500"
                 data-aos-once="true"
               >
-                <b>Putra Keempat</b> dari Bapak
-                <b> <br />Sugito (Alm. )</b>
+                <b>Putra Keempat</b> dari Kel. Bapak
+                <b> <br />Kgs Denny S A (Alm. )</b>
                 <br />
                 & Ibu
-                <b>Martini</b>
+                <b>Yohanna</b>
               </p>
             </div>
 
             <div class="w-1/3 h-full relative mr-3">
               <img
-                src="../assets/images/soni_putrawan.jpg"
-                class="w-full h-full rounded-xl shadow-2xl shadow-emerald-900"
+                src="../assets/images/Foto-Amik-Sendiri.jpg"
+                class="w-full h-full rounded-xl shadow-lg shadow-[#68554F]"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
                 data-aos-once="true"
@@ -257,7 +258,7 @@
         </div>
       </div>
 
-      <div class="min-h-screen w-full flex bg-[#000000] font-akaya snow-bg" id="dday">
+      <div class="min-h-screen w-full flex bg-[#cfcabc] font-akaya snow-bg" id="dday">
         <div class="min-h-1/2 w-full m-auto pb-36">
           <img src="../../public/decoration-2.png" class="w-full mb-4" />
 
@@ -279,7 +280,7 @@
               data-aos-duration="1500"
               data-aos-once="true"
             >
-              <h1 class="text-4xl mt-2">Soni & Tuti</h1>
+              <h1 class="text-4xl mt-2 font-honey">Aji (amik) & Risma</h1>
             </div>
             <p
               class="text-center mb-4 px-4"
@@ -290,31 +291,83 @@
               akan melaksanakan
             </p>
             <div
-              class="w-[80%] bg-[url(./image1.png)] bg-[#cfc3bd] h-[250px] bg-blend-multiply bg-[center_top_-2rem] bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
+              class="w-[80%] bg-[url(./prewedAJIL5.jpg)] bg-[#cfc3bd] h-[290px] bg-blend-multiply bg-[center_top_-10rem] bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
               data-aos="zoom-in-down"
               data-aos-duration="1500"
               data-aos-once="true"
             >
               <h1 class="font-honey text-xl text-center mb-4">Akad Nikah</h1>
               <p class="text-center text-sm">
-                <i class="fas fa-calendar"></i> Rabu, 18 Mei 2022
+                <i class="fas fa-calendar"></i> Jum'at, 15 Juli 2022
               </p>
               <p class="text-center text-sm">
-                <i class="fas fa-clock"></i> 08:00 - Selesai WIB
+                <i class="fas fa-clock"></i> 14:00 - Selesai WIB
               </p>
             </div>
+
             <div
-              class="w-[80%] bg-[url(./tuti_soni3.jpg)] h-[250px] bg-blend-multiply bg-top bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
+              data-aos="zoom-in-up"
+              data-aos-duration="1500"
+              data-aos-once="true"
+              class="mb-4"
+            >
+              <Countdown
+                :time="akadnikah"
+                v-slot="{ days, hours, minutes, seconds }"
+                v-if="akadnikah > 0"
+              >
+                <div
+                  class="flex justify-center items-stretch text-white gap-4 text-akaya"
+                >
+                  <div
+                    class="font-akaya rounded-lg bg-[#958277] w-[60px] p-1 text-center"
+                  >
+                    {{ days }} <br />Hari
+                  </div>
+                  <div
+                    class="font-akaya rounded-lg bg-[#958277] w-[60px] p-1 text-center"
+                  >
+                    {{ hours }} <br />Jam
+                  </div>
+                  <div
+                    class="font-akaya rounded-lg bg-[#958277] w-[60px] p-1 text-center"
+                  >
+                    {{ minutes }} <br />Menit
+                  </div>
+                  <div
+                    class="font-akaya rounded-lg bg-[#958277] w-[60px] p-1 text-center"
+                  >
+                    {{ seconds }} <br />Detik
+                  </div>
+                </div>
+              </Countdown>
+
+              <div
+                v-else-if="-86484928 < dday"
+                class="p-3 bg-[#958277] text-white text-lg mx-10 text-center shadow rounded-[10px]"
+              >
+                Acara sedang Berlangsung Hari Ini!
+              </div>
+              <div
+                v-else
+                class="p-3 bg-[#958277] text-white text-lg mx-10 text-center shadow rounded-[10px]"
+              >
+                Acara sudah Selesai!
+              </div>
+              <!-- <div v></div> -->
+            </div>
+            <div
+              class="w-[80%] bg-[url(./resepsiFoto.jpg)] h-[290px] bg-blend-multiply bg-[center_top_-5rem] bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
               data-aos="zoom-in-down"
               data-aos-duration="1500"
               data-aos-once="true"
             >
               <h1 class="font-honey text-xl text-center mb-4">Resepsi</h1>
               <p class="text-center text-sm">
-                <i class="fas fa-calendar"></i> Rabu, 18 Mei 2022
+                <i class="fas fa-calendar"></i> Minggu, 17 Juli 2022
               </p>
               <p class="text-center text-sm">
-                <i class="fas fa-clock"></i> 11:00 - Selesai WIB
+                <i class="fas fa-clock"></i> 08:00 - Selesai WIB
               </p>
             </div>
 
@@ -377,7 +430,7 @@
         </div>
       </div>
 
-      <div class="min-h-screen w-full flex bg-[#000000] font-akaya snow-bg" id="lokasi">
+      <div class="min-h-screen w-full flex bg-[#cfcabc] font-akaya snow-bg" id="lokasi">
           <div class="min-h-1/2 m-auto pb-36">
             <img src="../../public/decoration-2.png" class="w-full mb-4" />
                <!-- <h1
@@ -410,8 +463,9 @@
               scrolling="no" 
               marginheight="0" 
               marginwidth="0" 
-              src="https://maps.google.com/maps?q=-3.231483%2C%20103.2052618&t=m&z=16&output=embed&iwloc=near">
+               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d249.02195688208502!2d104.75047093228986!3d-2.999753830246225!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b9e00c17750fb%3A0x17b0b32d8f6e7f0e!2sLorong%20Langgar%2C%2032%20Ilir%2C%20Kec.%20Ilir%20Bar.%20II%2C%20Kota%20Palembang%2C%20Sumatera%20Selatan!5e0!3m2!1sid!2sid!4v1653728778491!5m2!1sid!2sid">
           </iframe>
+
           
           
             <!-- <GoogleMap
@@ -437,7 +491,7 @@
               data-aos-duration="1500"
               data-aos-once="true"
             >
-              Tempat Lokasi
+              Tempat Lokasi Resepsi dan Akad Nikah
             </h2>
             <h3
               class="text-center text-base mt-2"
@@ -445,16 +499,16 @@
               data-aos-duration="1500"
               data-aos-once="true"
             >
-              Rabu, 18 <sup>th</sup> Mei 2022
+              <!-- Rabu, 18 <sup>th</sup> Mei 2022 -->
+              Di Kediaman Mempelai Wanita
             </h3>
             <p
-              class="text-center text-xs mt-2"
+              class="text-center text-xs mt-2 px-4"
               data-aos="zoom-in-up"
               data-aos-duration="1500"
               data-aos-once="true"
             >
-              Desa ciptodadi kec. Sukakarya
-              Musirawas Lubuklinggau
+              Jln. Kigede ing suro Lr. Langgar No 107 Kel. 30 ilir Kec. Ilir Barat II Palembang
             </p>
             <div
               class="w-full flex"
@@ -464,7 +518,7 @@
             >
               <a
                 target="_blank"
-                href="https://goo.gl/maps/mGy6Mw3WAEkSmdtj9"
+                href="https://goo.gl/maps/k5F6eSwZFr9jS2Pd6"
                 class="animate-bounce px-2 py-2 max-w-xl bg-[#958277] text-white rounded-lg mt-8 hover:opacity-80 focus:outline-none active:outline-none text-base text-center inline-block mx-auto"
               >
                 Lihat Lokasi
@@ -478,7 +532,7 @@
       </div>
 
       <div
-        class="min-h-screen w-full flex bg-[#000000] font-akaya snow-bg"
+        class="min-h-screen w-full flex bg-[#cfcabc] font-akaya snow-bg"
         id="galeri-foto"
       >
         <div class="min-h-1/2 w-full m-auto pb-36">
@@ -497,7 +551,7 @@
 
             <div class="w-1/3 h-full relative ml-3">
               <img
-                src="../assets/images/foto_1.jpg"
+                src="../assets/images/prewedAJIL1.jpg"
                 class="w-full h-full rounded-xl shadow-2xl shadow-emerald-900"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
@@ -508,7 +562,7 @@
 
             <div class="w-1/3 h-full relative mx-2">
               <img
-                src="../assets/images/foto_2.jpg"
+                src="../assets/images/prewedAJIL2.jpg"
                 class="w-full h-full rounded-xl shadow-2xl shadow-emerald-900"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
@@ -519,7 +573,7 @@
 
             <div class="w-1/3 h-full relative mr-3">
               <img
-                src="../assets/images/foto_3.jpg"
+                src="../assets/images/prewedAJIL3.jpg"
                 class="w-full h-full rounded-xl shadow-2xl shadow-emerald-900"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
@@ -537,7 +591,7 @@
 
             <div class="w-1/3 h-full relative ml-3">
               <img
-                src="../assets/images/tuti_hasanah.jpg"
+                src="../assets/images/prewedAJIL4.jpg"
                 class="w-full h-full rounded-xl shadow-2xl shadow-emerald-900"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
@@ -548,7 +602,7 @@
 
             <div class="w-1/3 h-full relative mx-2">
               <img
-                src="../assets/images/foto_4.jpg"
+                src="../assets/images/prewedAJIL5.jpg"
                 class="w-full h-full rounded-xl shadow-2xl shadow-emerald-900"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
@@ -559,7 +613,7 @@
 
             <div class="w-1/3 h-full relative mr-3">
               <img
-                src="../assets/images/soni_putrawan.jpg"
+                src="../assets/images/prewedAJIL6.jpg"
                 class="w-full h-full rounded-xl shadow-2xl shadow-emerald-900"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
@@ -577,7 +631,7 @@
         </div>
       </div>
 
-      <div class="min-h-screen w-full flex bg-[#000000] font-akaya snow-bg" id="ucapan">
+      <div class="min-h-screen w-full flex bg-[#cfcabc] font-akaya snow-bg" id="ucapan">
         <div class="min-h-1/2 px-6 m-auto pb-36">
           <img src="../../public/decoration-2.png" class="w-full mb-4" />
           <h1
@@ -700,7 +754,7 @@
 
           <div class="mt-8">
             <h1
-              class="text-center text-4xl mb-4 font-akaya"
+              class="text-center text-4xl mb-4 font-honey"
               data-aos="zoom-in-up"
               data-aos-duration="1500"
               data-aos-once="true"
@@ -719,8 +773,8 @@
                 class="w-28 mx-auto mb-6"
                 alt=""
               />
-              <p class="text-center font-bold">8525320142</p>
-              <p class="text-center text-xl">a/n Tuti Hasanah</p>
+              <p class="text-center font-bold">3410753277</p>
+              <p class="text-center text-xl">a/n M Samiaji</p>
               <button
               @click="onClickCopyNorek('bca')"
               class=" min-w-[75px] px-4 py-2 bg-[#958277] text-white rounded-2xl hover:opacity-80 focus:outline-none active:outline-none text-base block mx-auto my-2"
@@ -737,17 +791,17 @@
               data-aos-once="true"
             >
               <img
-                src="../assets/images/logo-bri-preview.png"
+                src="../assets/images/logo_bni-preview.png"
                 class="w-40 mx-auto mb-6"
                 alt=""
               />
-              <p class="text-center font-bold">5759-01-009500-53-4</p>
-              <p class="text-center text-xl">a/n Soni Putrawan</p>
+              <p class="text-center font-bold">1149140996</p>
+              <p class="text-center text-xl">a/n M Samiaji</p>
                 <button
               @click="onClickCopyNorek('bri')"
               class=" min-w-[75px] px-4 py-2 bg-[#958277] text-white rounded-2xl hover:opacity-80 focus:outline-none active:outline-none text-base block mx-auto my-2"
             >
-             <i class="far fa-copy text-white"></i> {{btnBRI ? 'Berhasil di copy' : 'Copy Text'}}
+             <i class="far fa-copy text-white"></i> {{btnBNI ? 'Berhasil di copy' : 'Copy Text'}}
             </button>
             </div>
             <img
@@ -803,7 +857,7 @@ export default {
       konfirmasi: null,
       ucap: null,
       btnBCA: false,
-      btnBRI: false
+      btnBNI: false
       // locationMap: 'https://maps.google.com/maps?q=-3.231483%2C%20103.2052618&t=m&z=16&output=embed&iwloc=near'
       // center: { lat: -3.231483, lng: 103.2052618 }
     };
@@ -820,6 +874,28 @@ export default {
       audio.muted = this.muted;
     },
     async onClickKirim() {
+      if (!this.nama) {
+         Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: `Mohon Diisi Nama Anda!`,
+        });
+        return;
+      } else if (!this.konfirmasi) {
+          Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: `Mohon Dipilih Kehadiran Anda!`,
+        });
+        return;
+      } else if (!this.ucap) {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: `Ucapan Anda Masih Kosong!`,
+        });
+        return;
+      }
       this.loading = true;
       const temp = await this.kirimUcapan();
       if (temp === 1) {
@@ -850,7 +926,7 @@ export default {
 
       const API_QUERY = `
       mutation MyMutation {
-        insert_soni_tuti_wedding_ucapan(objects: {konfirmasi: "${this.konfirmasi}", nama: "${this.nama}", ucapan: "${this.ucap}"}) {
+        insert_amik_risma_wedding_ucapan(objects: {konfirmasi: "${this.konfirmasi}", nama: "${this.nama}", ucapan: "${this.ucap}"}) {
           affected_rows
         }
       }
@@ -861,7 +937,7 @@ export default {
           { query: API_QUERY },
           { headers: API_HEADERS }
         );
-        return data.data.data.insert_soni_tuti_wedding_ucapan.affected_rows;
+        return data.data.data.insert_amik_risma_wedding_ucapan.affected_rows;
       } catch (error) {
         Swal.fire({
           icon: "error",
@@ -886,7 +962,7 @@ export default {
 
       const API_QUERY = `
       query MyQuery {
-        soni_tuti_wedding_ucapan_aggregate {
+        amik_risma_wedding_ucapan_aggregate {
           aggregate {
             count
           }
@@ -899,7 +975,7 @@ export default {
           { query: API_QUERY },
           { headers: API_HEADERS }
         );
-        return data.data.data.soni_tuti_wedding_ucapan_aggregate.aggregate
+        return data.data.data.amik_risma_wedding_ucapan_aggregate.aggregate
           .count;
       } catch (error) {
         Swal.fire({
@@ -919,7 +995,7 @@ export default {
 
       const API_QUERY = `
       query MyQuery {
-        soni_tuti_wedding_ucapan(offset: ${this.offset}, limit: ${this.limit}, order_by: {created_at: desc}) {
+        amik_risma_wedding_ucapan(offset: ${this.offset}, limit: ${this.limit}, order_by: {created_at: desc}) {
           ucapan
           nama
           konfirmasi
@@ -934,7 +1010,7 @@ export default {
           { query: API_QUERY },
           { headers: API_HEADERS }
         );
-        return data.data.data.soni_tuti_wedding_ucapan;
+        return data.data.data.amik_risma_wedding_ucapan;
       } catch (error) {
         Swal.fire({
           icon: "error",
@@ -947,12 +1023,12 @@ export default {
     onClickCopyNorek(flag) {
       let noRek = ''
       if (flag === 'bca') {
-        noRek = '8525320142'
+        noRek = '3410753277'
         this.btnBCA = true
       }
       else {
-        noRek = '575901009500534'
-        this.btnBRI = true
+        noRek = '1149140996'
+        this.btnBNI = true
       }
 
       const mySmartTextarea = document.createElement("textarea");
@@ -963,7 +1039,7 @@ export default {
       document.execCommand("copy");
       mySmartTextarea.remove();
       setTimeout(() => {
-        this.btnBRI = false
+        this.btnBNI = false
         this.btnBCA = false
       }, 1500);
     },
@@ -971,7 +1047,12 @@ export default {
   computed: {
     dday() {
       return (
-        new Date("May 18, 2022 08:00:00").getTime() - new Date().getTime()
+        new Date("July 17, 2022 08:00:00").getTime() - new Date().getTime()
+      );
+    },
+    akadnikah() {
+      return (
+        new Date("July 15, 2022 14:00:00").getTime() - new Date().getTime()
       );
     },
   },

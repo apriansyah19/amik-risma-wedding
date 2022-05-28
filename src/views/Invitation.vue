@@ -88,33 +88,42 @@ export default {
         `https://wa.me/${this.noWA.replace(
           /[^a-zA-Z 0-9+]+/g,
           ""
-        )}?text=Bismillahirrahmanirrahim%0A%20%20%20%20%20%20%0AAssalamualaikum%20Wr.%20Wb.%0ATanpa%20mengurangi%20rasa%20hormat%2C%20perkenankan%20kami%20mengundang%20Bapak%2FIbu%2FSaudara%2Fi%2C%20teman%20sekaligus%20sahabat%2C%20untuk%20menghadiri%20acara%20pernikahan%20kami%3A%0A%20%20%20%20%20%20%0ATuti%20Hasanah%2C%20S.Kom.%0A%20%20%20%20%20%20%20%20%20%20dan%0ASoni%20Putrawan%2C%20A.Md.%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0ADesa%20ciptodadi%20kec.%20Sukakarya%20Musirawas%20Lubuklinggau%0ARabu%2C%2018%20Mei%202022%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0ABerikut%20link%20undangan%20kami%20untuk%20info%20lengkap%20dari%20acara%20bisa%20kunjungi%3A%0A%0A
-        
-        https://soni-tuti-wedding.netlify.app/${this.nama}
-
-        %20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0AMerupakan%20suatu%20kebahagiaan%20bagi%20kami%20apabila%20Bapak%2FIbu%2FSaudara%2Fi%20berkenan%20untuk%20hadir%20dan%20memberikan%20doa%20restu%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0ATerima%20kasih%20%0AWassalamu%27alaikum%20Wr.%20Wb.`,
-        "_blank"
+        )}?text=Bismillahirrahmanirrahim%0A%20%20%20%20%20%20%0AAssalamualaikum%20Wr.%20Wb.%0ATanpa%20mengurangi%20rasa%20hormat%2C%20perkenankan%20kami%20mengundang%20Bapak%2FIbu%2FSaudara%2Fi%2C%20teman%20sekaligus%20sahabat%2C%20untuk%20menghadiri%20acara%20pernikahan%20kami%3A%0A%20%20%20%20%20%20%0A%20Lismawati%20Kartika%20Sari%0A%20%20%20%20%20%20%20%20%20%20dan%0A%20%20%20%20%20M%20Samiaji%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0AJln.%20Kigede%20ing%20suro%20Lr.%20Langgar%20No%20107%20Kel.%2030%20ilir%20Kec.%20Ilir%20Barat%20II%20Palembang%0A%0AAkad%20Nikah%20Jum%27at%2C%2015%20Juli%202022%0A%0AResepsi%20Minggu%2017%20Juli%202022%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0ABerikut%20link%20undangan%20kami%20untuk%20info%20lengkap%20dari%20acara%20bisa%20kunjungi%3A%20%0A%20%20%20%20%20%20%20%20%20%20%0A
+        https://aji-risma-wedding.netlify.app/${this.nama}
+        %0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0AMerupakan%20suatu%20kebahagiaan%20bagi%20kami%20apabila%20Bapak%2FIbu%2FSaudara%2Fi%20berkenan%20untuk%20hadir%20dan%20memberikan%20doa%20restu%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0ATerima%20kasih%20%0AWassalamu%27alaikum%20Wr.%20Wb.`,       
+       "_blank"
       );
       this.nama = "";
       this.noWA = "+628";
     },
     onClickKirimIG() {
+      if (!this.nama) {
+         Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: `Silahkan isi Nama`,
+        });
+        return
+      }
       this.nama = this.nama.replace(/ /g, ";").replace("&", "=");
       this.igDM = `Bismillahirrahmanirrahim
       
 Assalamualaikum Wr. Wb.
 Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i, teman sekaligus sahabat, untuk menghadiri acara pernikahan kami:
       
-Tuti Hasanah, S.Kom.
+ Lismawati Kartika Sari
           dan
-Soni Putrawan, A.Md. 
+     M Samiaji
                  
-Desa ciptodadi kec. Sukakarya Musirawas Lubuklinggau
-Rabu, 18 Mei 2022 
+Jln. Kigede ing suro Lr. Langgar No 107 Kel. 30 ilir Kec. Ilir Barat II Palembang
+
+Akad Nikah Jum'at, 15 Juli 2022
+
+Resepsi Minggu 17 Juli 2022
                  
 Berikut link undangan kami untuk info lengkap dari acara bisa kunjungi: 
                  
-https://soni-tuti-wedding.netlify.app/${this.nama}; 
+https://aji-risma-wedding.netlify.app/${this.nama}; 
                  
 Merupakan suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan untuk hadir dan memberikan doa restu 
                  
@@ -147,13 +156,13 @@ Wassalamu'alaikum Wr. Wb.
         });
         return;
       } else if (
-        this.username.toLowerCase() === "sonituti" &&
-        this.password === "18052022"
+        this.username.toLowerCase() === "amikrisma" &&
+        this.password === "17072022"
       ) {
         Swal.fire({
           icon: "success",
           title: "Yeay...",
-          text: `Selamat datang Soni dan Tuti`,
+          text: `Selamat datang Aji (amik) dan Risma`,
         });
         this.login = true;
       } else {
