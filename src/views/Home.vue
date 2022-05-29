@@ -28,7 +28,7 @@
           <h1
             class="text-center text-[#f8f8f8] text-[calc(50px*0.75)] leading-[1] tracking-[2px] mt-4 pt-4 animate-[scale-in-bottom_1s_ease-in-out_1.1s_both]"
           >
-            Aji (amik) & Risma
+            Aji (amik) & Lisma
           </h1>
           <!-- <h2
             class="uppercase text-center tracking-[1px] my-2 text-[calc(20px*0.75)] animate-[fade-in-bottom_1s_ease-in-out_1.5s_both]"
@@ -145,6 +145,7 @@
         class="min-h-screen w-full mx-auto flex bg-[#cfcabc] font-akaya snow-bg"
         id="mempelai-wanita"
       >
+
         <div class="min-h-1/2 w-full m-auto pb-36">
           <img src="../../public/decoration-2.png" class="w-full mb-4" />
           <h1
@@ -157,10 +158,10 @@
           </h1>
 
           <div class="columns-2 flex">
-            <div class="w-1/3 h-full relative">
+            <div class="w-1/3 h-full relative ml-3">
               <img
                 src="../assets/images/Foto-Risma-Sendiri.jpg"
-                class="w-full h-full rounded-xl ml-3 shadow-2xl shadow-[#68554F]"
+                class="w-full h-full rounded-xl shadow-lg shadow-[#68554F]"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
                 data-aos-once="true"
@@ -170,16 +171,17 @@
 
             <div class="m-auto w-2/3">
               <h2
-                class="text-center text-2xl px-2 w-full"
+                class="text-center text-2xl px-2"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
                 data-aos-once="true"
               >
-                 Lismawati Kartika Sari
+                Lismawati Kartika Sari
                 <!-- <span class="text-xl">S.I.Kom.</span> -->
               </h2>
+
               <p
-                class="text-center w-full text-sm mx-auto mt-4 leading-4 px-2"
+                class="text-center w-[90%] text-sm mx-auto leading-4 mt-4 px-2"
                 data-aos="zoom-in-down"
                 data-aos-duration="1500"
                 data-aos-once="true"
@@ -232,7 +234,7 @@
                 data-aos-once="true"
               >
                 <b>Putra Keempat</b> dari Kel. Bapak
-                <b> <br />Kgs Denny S A (Alm. )</b>
+                <b> <br />Kgs. Denny S.A (Alm.) </b>
                 <br />
                 & Ibu
                 <b>Yohanna</b>
@@ -280,7 +282,7 @@
               data-aos-duration="1500"
               data-aos-once="true"
             >
-              <h1 class="text-4xl mt-2 font-honey">Aji (amik) & Risma</h1>
+              <h1 class="text-4xl mt-2 font-honey">Aji (amik) & Lisma</h1>
             </div>
             <p
               class="text-center mb-4 px-4"
@@ -296,11 +298,11 @@
               data-aos-duration="1500"
               data-aos-once="true"
             >
-              <h1 class="font-honey text-xl text-center mb-4">Akad Nikah</h1>
-              <p class="text-center text-sm">
+              <h1 class="font-honey text-xl text-center mb-4" style="text-shadow: 2px 4px 2px #171616;">Akad Nikah</h1>
+              <p class="text-center text-sm" style="text-shadow: 2px 4px 2px #171616;">
                 <i class="fas fa-calendar"></i> Jum'at, 15 Juli 2022
               </p>
-              <p class="text-center text-sm">
+              <p class="text-center text-sm" style="text-shadow: 2px 4px 2px #171616;">
                 <i class="fas fa-clock"></i> 14:00 - Selesai WIB
               </p>
             </div>
@@ -362,11 +364,11 @@
               data-aos-duration="1500"
               data-aos-once="true"
             >
-              <h1 class="font-honey text-xl text-center mb-4">Resepsi</h1>
-              <p class="text-center text-sm">
+              <h1 class="font-honey text-xl text-center mb-4"  style="text-shadow: 2px 4px 2px #171616;">Resepsi</h1>
+              <p class="text-center text-sm"  style="text-shadow: 2px 4px 2px #171616;">
                 <i class="fas fa-calendar"></i> Minggu, 17 Juli 2022
               </p>
-              <p class="text-center text-sm">
+              <p class="text-center text-sm"  style="text-shadow: 2px 4px 2px #171616;">
                 <i class="fas fa-clock"></i> 08:00 - Selesai WIB
               </p>
             </div>
