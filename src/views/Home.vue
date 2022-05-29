@@ -26,7 +26,7 @@
         </div> -->
         <div class="fixed bottom-10 left-0 right-0">
           <h1
-            class="text-center text-[#f8f8f8] text-[calc(50px*0.75)] leading-[1] tracking-[2px] mt-4 pt-4 animate-[scale-in-bottom_1s_ease-in-out_1.1s_both]"
+            class="text-center text-[#f8f8f8] text-[calc(50px*0.75)] leading-[1] tracking-[2px] mt-4 pt-4 animate-[scale-in-bottom_1s_ease-in-out_1.1s_both]" style="text-shadow: 2px 4px 2px #171616;"
           >
             Aji (amik) & Lisma
           </h1>
@@ -37,17 +37,17 @@
           </h2> -->
 
           <h2
-            class="uppercase text-[#f8f8f8] text-center tracking-[1px] mt-8 text-[calc(14px*0.75)] animate-[fade-in-top_1s_ease-in-out_1.8s_both]"
+            class="uppercase text-[#f8f8f8] text-center tracking-[1px] mt-8 text-[calc(14px*0.75)] animate-[fade-in-top_1s_ease-in-out_1.8s_both]" style="text-shadow: 2px 4px 2px #171616;"
           >
             Yang terhormat
           </h2>
           <h1
-            class="text-center text-[#f8f8f8] font-akaya text-[calc(36px*0.75)] leading-[1] tracking-[2px] pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_2.1s_both] capitalize"
+            class="text-center text-[#f8f8f8] font-akaya text-[calc(36px*0.75)] leading-[1] tracking-[2px] pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_2.1s_both] capitalize" style="text-shadow: 2px 4px 2px #171616;"
           >
             {{ undangan.replace(/\;/g, " ").replace(/\=/g, "&") }}
           </h1>
           <p
-            class=" text-[#f8f8f8] text-center text-[calc(15px*0.75)] animate-[fade-in-bottom_1s_ease-in-out_2.4s_both] px-4"
+            class=" text-[#f8f8f8] text-center text-[calc(15px*0.75)] animate-[fade-in-bottom_1s_ease-in-out_2.4s_both] px-4" style="text-shadow: 2px 4px 2px #171616;"
           >
             Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami
           </p>
